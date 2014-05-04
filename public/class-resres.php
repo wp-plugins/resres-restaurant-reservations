@@ -261,8 +261,6 @@ class ResRes {
 	private static function single_activate() {
 		//Define activation functionality here
 
-
-
 	$resres_default_general = array(
 		'currency_symbol'	=>	'$'
 		);
@@ -357,9 +355,21 @@ class ResRes {
 	add_option( 'resres_form_options', $resres_default_form );
 	add_option( 'resres_email_options', $resres_default_email );
 
+
+	/**
+	 * This is cos of a bug where in 1.0.0.f if they had saved the form options the themeroller options would be removed. This checks for it and adds it back.
+	 */
+	$options = get_option('resres_form_options');
+	if(!$options['themeroller_select']) {
+		$options['themeroller_select'] = "Smoothness";
+		update_option( 'resres_form_options', $options );
+	}
+
+
 	foreach($resres_default_email as $opt) {
 		add_option( 'resres_email_options', $opt );
 	}
+
 
 
 

@@ -12,52 +12,44 @@ A restaurant reservation and menu plugin from deftDEV
 
 == Description ==
 
-ResRes is a fully featured restaurant reservation and menu system.
+ResRes is a fully featured restaurant reservation and menu system. Create custom menus to chow off your dishes, and allow your customers to easily reserve a table online.
 
-* THE LIGHT VERSION DOES NOT CONTAIN ALL OF THESE FEATURES *
 
-####Reservations
+####Features
 
 * Easily add a reservation form to your WordPress site via a shortcode.
-
-* The form will automatically block out days and times your restaurant is closed to stop people from booking the wrong times
-
+* The form will automatically block out days and times your restaurant is closed to stop people from booking the wrong times.
 * A capacity system, allows you to limit the number of bookings per hour.
-
-* The built in admin reservation page, allows you to easily see how many people have booked on any given day. **[PRO](http://deftdev.com/downloads/resres "deftDEV")**
-
-* You can also mark customers as cancelled or arrived. **[PRO](http://deftdev.com/downloads/resres "deftDEV")**
-
 * Customisable customer and admin emails.
-
 * Built in tags to easily add info to emails such as reservation date, party size, etc.
-
-* Use the built in numeric captcha system or use reCAPTCHA **[PRO](http://deftdev.com/downloads/resres "deftDEV")**
-
-* Cancellation form available **[PRO](http://deftdev.com/downloads/resres "deftDEV")**
-
-* Opening times & location shortcode 
-
-* Themeroller styled forms (Smoothness, more in **[PRO](http://deftdev.com/downloads/resres "deftDEV")**)
-
-####Menus
-
+* Opening times & location shortcode.
+* Themeroller styled forms ( Smoothness only )
 * Menu creation is a breeze thanks to using WordPress Custom Post Types.
-
-* Each dish can be added to a section named whatever you like (Starters, Main Courses, etc)
-
+* Each dish can be added to a section named whatever you like (Starters, Main Courses, etc).
 * Each section can be re-ordered via a drag an drop interface or via the shortcode settings.
+* Comes with the default template: two column layout.
 
-* If you need more than one menu, the shortcodes allow for different sectiosn and event templates to be shown. **[PRO](http://deftdev.com/downloads/resres "deftDEV")**
+####Premium Version
 
-* Comes with a default template
+**[ResRes Premium](http://deftdev.com/downloads/resres "deftDEV")**
 
-* More templates available in the **[PRO](http://deftdev.com/downloads/resres "deftDEV")** version  - columns, chalkboard, grid and accordion.
+* The built in admin reservation page, allows you to easily see how many people have booked on any given day. 
+* You can also mark customers as cancelled or arrived. 
+* Use the built in numeric captcha system or use reCAPTCHA 
+* Cancellation form available 
+* Themeroller styled forms ( All the default jQuery UI Themeroller styles )
+* If you need more than one menu, the shortcodes allow for different sections and event templates to be shown. 
+* More templates available in the  version  - columns, chalkboard, grid and accordion.
+* Easily assign allergen information or wine type (dry, full bodied, etc) to a dish in text or icon form. 
+* Easily add chili icons to denote spicy heat! 
 
-* Easily assign allergen information or wine type (dry, full bodied, etc) to a dish in text or icon form. **[PRO](http://deftdev.com/downloads/resres "deftDEV")**
+####Support
 
-* Easily add chili icons to denote spicy heat! **[PRO](http://deftdev.com/downloads/resres "deftDEV")**
+Please make sure you read the [documentation](http://www.deftdev.com/document/resres-documentation/).
 
+Further support can be found in the [support forum](http://www.deftdev.com/support/) (registration required)
+
+Feature requests and bug reports can be requested/reported via this [form](http://www.deftdev.com/feature-requests-bug-reports/).
 
 == Installation ==
 

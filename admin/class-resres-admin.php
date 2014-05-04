@@ -1048,6 +1048,8 @@ public function resres_free_callback($args) {
 
     $html .= '</div>';
 
+    $html .= '<input type="hidden" name="resres_form_options[themeroller_select]" id="" value="Smoothness" />';
+    
     echo $html;
 
 }
@@ -1101,7 +1103,7 @@ public function resres_initialise_form_options() {
 
 
 	add_settings_field(
-		'resres_time',                      // ID used to identify the field throughout the theme
+		'resres_free',                      // ID used to identify the field throughout the theme
 		'',                           // The label to the left of the option interface element
 		array($this, 'resres_free_callback'),   // The name of the function responsible for rendering the option interface
 		'resres_form_options',                          // The page on which this option will be displayed
@@ -1121,7 +1123,7 @@ public function resres_initialise_form_options() {
 	    'resres_form_options',
 	    'resres_form_options'
 	);
-
+/*
 	register_setting(
 	    'resres_form_options',
 	    'resres_form_options'
@@ -1141,6 +1143,7 @@ public function resres_initialise_form_options() {
 	    'resres_form_options',
 	    'resres_form_options'
 	);
+*/
 
 }
 
@@ -1162,7 +1165,7 @@ public function resres_regform_partysize_callback($args) {
 
 }
 
-
+/*
 public function resres_regform_disable_themeroller_callback($args) {
 
     $options = get_option('resres_form_options');
@@ -1266,7 +1269,7 @@ public function resres_regform_recaptcha_key_callback($args) {
 
 }
 
-
+*/
 
 
 
