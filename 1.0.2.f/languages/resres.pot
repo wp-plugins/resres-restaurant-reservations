@@ -1,0 +1,687 @@
+# Copyright (C) 2013 TODO
+# This file is distributed under the same license as the TODO package.
+msgid ""
+msgstr ""
+"Project-Id-Version: ResRes 1.3.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/plugins/resres\n"
+"POT-Creation-Date: 2014-05-08 09:25+0200\n"
+"PO-Revision-Date: 2014-05-08 09:26+0200\n"
+"Last-Translator: FULL NAME <email@example.com>\n"
+"Language-Team: deftDEV <team@deftdev.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-KeywordsList: __;_e;_n;_x\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../admin/class-resres-admin.php:380 ../admin/class-resres-admin.php:381
+msgid "ResRes"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:392 ../admin/class-resres-admin.php:393
+msgid "Reservations"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:401 ../admin/class-resres-admin.php:402
+#: ../admin/class-resres-admin.php:495
+msgid "Settings"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:413 ../admin/class-resres-admin.php:414
+#: ../public/includes/item_cpt.php:9
+msgid "Add New Dish"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:422 ../admin/class-resres-admin.php:423
+msgid "Sections"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:646
+msgid "<span id=\"resres_sucmsg\"> - Reservation added successfully</span>"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:684 ../admin/views/admin.php:65
+msgid "General Options"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:691
+msgid "Restaurant information"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:702
+msgid "Days restaurant is open"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:713
+msgid ""
+"Override opening times: <br> Enter one date per line. Please use the Month-"
+"Date format, e.g. for 25th December use 12-25"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:718
+msgid ""
+"Please do not use leading zeros. E.g. if the date you want to exclude is "
+"January the first, write it as 1-1, not 01-01"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:724
+msgid "Currency symbol"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:729
+msgid "Default is $"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:735
+msgid "Disable menu images"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:799
+msgid "<p>The following shortcodes can be used on pages or posts</p>"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:800
+msgid "<p>[resres] - displays the reservations form</p>"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:801
+msgid "<p>[resresmenu] - displays the menu</p>"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:804
+msgid ""
+"<p><strong>Please see the <a href=\"http://www.deftdev.com/document/resres-"
+"documentation/\">documentation</a> for further information regarding the "
+"shortcodes.</strong></p>"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:830
+msgid "Restaurant name"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:835
+#: ../public/includes/address_and_opening_times.php:142
+msgid "Address"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:840
+msgid "Address line 2"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:845
+msgid "City"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:850
+msgid "State/Region"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:855
+msgid "Country"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:860
+msgid "Zip/Postal Code"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:865
+msgid "Telephone"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:870
+#: ../public/includes/address_and_opening_times.php:180
+msgid "Fax"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:875
+msgid "E-mail"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:880
+msgid "Facebook (url)"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:885
+msgid "Twitter (handle)"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:890
+msgid "Google Plus (user code)"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:910
+msgid "Open?"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:911
+msgid "First sitting from"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:912 ../admin/class-resres-admin.php:915
+#: ../admin/class-resres-admin.php:1524 ../admin/class-resres-admin.php:1553
+msgid "To"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:914
+msgid "Second sitting from"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:921
+msgid "Mon"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:935
+msgid "Tue"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:946
+msgid "Wed"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:957
+msgid "Thu"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:968
+msgid "Fri"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:979
+msgid "Sat"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:990
+msgid "Sun"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:1110 ../admin/views/admin.php:66
+msgid "Reservation Form Options"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:1118
+msgid "Max. Party Size"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:1334 ../admin/views/admin.php:67
+msgid "Email Options"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:1354
+msgid "Disable emails to site admin"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:1365
+msgid "Disable reservation emails to customer"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:1376
+msgid "The customer email. <br>"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:1379
+msgid "These tags can be used in your emails."
+msgstr ""
+
+#: ../admin/class-resres-admin.php:1410
+msgid "The admin email."
+msgstr ""
+
+#: ../admin/class-resres-admin.php:1528 ../admin/class-resres-admin.php:1557
+msgid "Cc"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:1532 ../admin/class-resres-admin.php:1561
+msgid "Subject"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:1536 ../admin/class-resres-admin.php:1565
+msgid "Message"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:1570
+msgid "Available email tags"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:1599 ../admin/views/admin.php:68
+msgid "Menu Ordering"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:1608
+msgid "Order the menu sections"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:1624
+msgid "Order the dishes"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:1677 ../admin/class-resres-admin.php:1691
+msgid "Drag & drop to re-order"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:1693
+msgid "Dishes can only be re-ordered within their section."
+msgstr ""
+
+#: ../admin/class-resres-admin.php:1713
+msgid "Please allocate a dish to a section."
+msgstr ""
+
+#: ../admin/class-resres-admin.php:1818
+msgid "No sections found."
+msgstr ""
+
+#: ../admin/includes/meta_boxes.php:46
+msgid ""
+"That you can re-order how the sections are displayed on the menu from the <a "
+"target=\"_blank\" href=\""
+msgstr ""
+
+#: ../admin/includes/meta_boxes.php:58
+msgid "Price"
+msgstr ""
+
+#: ../admin/views/admin.php:29
+msgid "Documentation"
+msgstr ""
+
+#: ../admin/views/admin.php:30
+msgid "Support"
+msgstr ""
+
+#: ../admin/views/admin.php:31
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: ../admin/views/admin.php:40
+msgid ""
+"WARNING: JavaScript is DISABLED. ResRes requires JavaScript to be enabled in "
+"the admin to function correctly."
+msgstr ""
+
+#: ../admin/views/menus.php:39
+msgid "New Section"
+msgstr ""
+
+#: ../admin/views/menus.php:43
+msgid "Load Section"
+msgstr ""
+
+#: ../admin/views/menus.php:45
+msgid "Select a Section"
+msgstr ""
+
+#: ../admin/views/menus.php:51
+msgid "Save Section"
+msgstr ""
+
+#: ../admin/views/menus.php:52
+msgid "Please enter a name for this section."
+msgstr ""
+
+#: ../admin/views/reservations.php:32
+msgid "Today"
+msgstr ""
+
+#: ../admin/views/reservations.php:33
+msgid "Tomorrow"
+msgstr ""
+
+#: ../admin/views/reservations.php:34
+msgid "This week"
+msgstr ""
+
+#: ../admin/views/reservations.php:35
+msgid "This month"
+msgstr ""
+
+#: ../admin/views/reservations.php:36
+msgid "Select first date"
+msgstr ""
+
+#: ../admin/views/reservations.php:37
+msgid "Select second date"
+msgstr ""
+
+#: ../admin/views/reservations.php:41
+msgid "Load"
+msgstr ""
+
+#: ../admin/views/reservations.php:47
+msgid "Print"
+msgstr ""
+
+#: ../admin/views/reservations.php:48
+msgid "Hide arrived customers"
+msgstr ""
+
+#: ../admin/views/reservations.php:49
+msgid "Hide cancelled customers"
+msgstr ""
+
+#: ../admin/views/reservations.php:51
+msgid "Add Reservation"
+msgstr ""
+
+#: ../admin/views/reservations.php:69 ../admin/views/reservations.php:150
+msgid "Date"
+msgstr ""
+
+#: ../admin/views/reservations.php:72 ../admin/views/reservations.php:152
+msgid "Time"
+msgstr ""
+
+#: ../admin/views/reservations.php:78 ../admin/views/reservations.php:144
+#: ../public/includes/item_cpt.php:97
+msgid "Name"
+msgstr ""
+
+#: ../admin/views/reservations.php:81 ../admin/views/reservations.php:148
+msgid "Party Size"
+msgstr ""
+
+#: ../admin/views/reservations.php:92
+msgid "Phone number"
+msgstr ""
+
+#: ../admin/views/reservations.php:95 ../admin/views/reservations.php:146
+#: ../public/includes/address_and_opening_times.php:186
+msgid "Email"
+msgstr ""
+
+#: ../admin/views/reservations.php:101 ../admin/views/reservations.php:147
+msgid "Notes"
+msgstr ""
+
+#: ../admin/views/reservations.php:114
+msgid "Admin email"
+msgstr ""
+
+#: ../admin/views/reservations.php:116
+msgid "Customer email"
+msgstr ""
+
+#: ../admin/views/reservations.php:128
+msgid "Currently displaying:"
+msgstr ""
+
+#: ../admin/views/reservations.php:145
+#: ../public/includes/address_and_opening_times.php:174
+msgid "Phone"
+msgstr ""
+
+#: ../admin/views/reservations.php:153
+msgid "Arrived"
+msgstr ""
+
+#: ../admin/views/reservations.php:154
+msgid "Cancelled"
+msgstr ""
+
+#: ../public/class-resres.php:818
+msgid ""
+"<div class=\"res_clearmargin\"><p class=\"resres_error_message\">Sorry, the "
+"restuarant is fully booked for that time. Please choose another time and "
+"resubmit the form.</p></div>"
+msgstr ""
+
+#: ../public/class-resres.php:829
+msgid ""
+"<div class=\"res_clearmargin\"><p class=\"resres_error_message\">The captcha "
+"was not entered correctly. Please try it again.</p></div>"
+msgstr ""
+
+#: ../public/class-resres.php:853
+msgid ""
+"<div class=\"res_clearmargin\"><p class=\"resres_error_message\">The "
+"reCAPTCHA was not entered correctly. Please try it again.</p></div>"
+msgstr ""
+
+#: ../public/class-resres.php:1178
+msgid "No sections created yet."
+msgstr ""
+
+#: ../public/class-resres.php:1259
+msgid "Reservation not found. Please check the ID and try again."
+msgstr ""
+
+#: ../public/class-resres.php:1262
+msgid "Reservation cancelled."
+msgstr ""
+
+#: ../public/class-resres.php:1414 ../public/class-resres.php:1459
+#: ../public/class-resres.php:1462 ../public/class-resres.php:1517
+#: ../public/class-resres.php:1518 ../public/class-resres.php:1545
+#: ../public/class-resres.php:1546
+msgid " "
+msgstr ""
+
+#: ../public/class-resres.php:1490
+msgid "Spicy hot!"
+msgstr ""
+
+#: ../public/includes/address_and_opening_times.php:32
+#: ../public/includes/address_and_opening_times.php:39
+#: ../public/includes/address_and_opening_times.php:46
+#: ../public/includes/address_and_opening_times.php:50
+#: ../public/includes/address_and_opening_times.php:54
+#: ../public/includes/address_and_opening_times.php:58
+#: ../public/includes/address_and_opening_times.php:62
+#: ../public/includes/address_and_opening_times.php:66
+#: ../public/includes/address_and_opening_times.php:89
+#: ../public/includes/address_and_opening_times.php:93
+#: ../public/includes/address_and_opening_times.php:97
+#: ../public/includes/address_and_opening_times.php:101
+#: ../public/includes/address_and_opening_times.php:105
+#: ../public/includes/address_and_opening_times.php:109
+#: ../public/includes/address_and_opening_times.php:113
+msgid "Closed"
+msgstr ""
+
+#: ../public/includes/address_and_opening_times.php:128
+msgid "Contact Us"
+msgstr ""
+
+#: ../public/includes/address_and_opening_times.php:205
+msgid "Opening Times"
+msgstr ""
+
+#: ../public/includes/address_and_opening_times.php:222
+msgid "Sitting One"
+msgstr ""
+
+#: ../public/includes/address_and_opening_times.php:223
+msgid "Sitting Two"
+msgstr ""
+
+#: ../public/includes/address_and_opening_times.php:229
+msgid "Monday: "
+msgstr ""
+
+#: ../public/includes/address_and_opening_times.php:234
+msgid "Tuesday: "
+msgstr ""
+
+#: ../public/includes/address_and_opening_times.php:239
+msgid "Wednesday: "
+msgstr ""
+
+#: ../public/includes/address_and_opening_times.php:244
+msgid "Thursday: "
+msgstr ""
+
+#: ../public/includes/address_and_opening_times.php:249
+msgid "Friday: "
+msgstr ""
+
+#: ../public/includes/address_and_opening_times.php:254
+msgid "Saturday: "
+msgstr ""
+
+#: ../public/includes/address_and_opening_times.php:259
+msgid "Sunday: "
+msgstr ""
+
+#: ../public/includes/item_cpt.php:6 ../public/includes/item_cpt.php:17
+msgid "Dishes"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:7
+msgid "Dish"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:8
+msgid "Add New"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:10
+msgid "Edit Dish"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:11
+msgid "New Dish"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:12
+msgid "View Dish"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:13
+msgid "Search Dishes"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:14
+msgid "No dishes found"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:15
+msgid "No dishes found in Trash"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:16
+msgid "Parent Dish:"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:57 ../public/includes/item_cpt.php:71
+msgid "Menu Sections"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:58
+msgid "Menu Section"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:59
+msgid "Search Menu Sections"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:61
+msgid "All Menu Sections"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:64
+msgid "Edit Menu Section"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:65
+msgid "Update Menu Section"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:66
+msgid "Add New Menu Section"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:67
+msgid "New Menu Section"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:68
+msgid "Separate menu sections with commas"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:69
+msgid "Add or remove menu sections"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:70
+msgid "Choose from the most used menu sections"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:98
+msgid "Description"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:99
+msgid "Slug"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:101
+msgid "Posts"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:176
+msgid "Dish name"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:190
+msgid "Photo of Dish"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:194
+msgid "Short Description"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:218
+msgid "IMPORTANT: You can change the order of the Menu Sections from the"
+msgstr ""
+
+#: ../public/includes/item_cpt.php:218
+msgid "Settings page"
+msgstr ""
+
+#: ../public/templates/column/column.php:17
+msgid "Nothing here right now..."
+msgstr ""
+
+#: ../public/views/cancel.php:6
+msgid "Cancel Reservation"
+msgstr ""
+
+#: ../public/views/public.php:34
+msgid "Date *"
+msgstr ""
+
+#: ../public/views/public.php:37
+msgid "Time *"
+msgstr ""
+
+#: ../public/views/public.php:39
+msgid "Party Size - slide to set, or type a number in the box."
+msgstr ""
+
+#: ../public/views/public.php:50
+msgid "Name *"
+msgstr ""
+
+#: ../public/views/public.php:52
+msgid "Phone number *"
+msgstr ""
+
+#: ../public/views/public.php:54
+msgid "Email *"
+msgstr ""
+
+#: ../public/views/public.php:56
+msgid "Notes - please let us know about any special needs, birthdays, etc."
+msgstr ""
+
+#: ../public/views/public.php:61
+msgid "Please confirm you are human, what is "
+msgstr ""
+
+#: ../public/views/public.php:83
+msgid "Reserve Table"
+msgstr ""
