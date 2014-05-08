@@ -4,7 +4,7 @@ Donate link: http://deftdev.com/
 Tags: restaurant, reservation, booking, menu, 
 Requires at least: 3.7.1
 Tested up to: 3.9
-Stable tag: 1.0.0.f
+Stable tag: 1.0.2.f
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,13 +12,14 @@ A restaurant reservation and menu plugin from deftDEV
 
 == Description ==
 
-ResRes is a fully featured restaurant reservation and menu system. Create custom menus to chow off your dishes, and allow your customers to easily reserve a table online.
+ResRes is a fully featured restaurant reservation and menu system. Create custom menus to show off your dishes, and allow your customers to easily reserve a table online.
 
 
 ####Features
 
 * Easily add a reservation form to your WordPress site via a shortcode.
 * The form will automatically block out days and times your restaurant is closed to stop people from booking the wrong times.
+* Set certain weekdays as closed on the calendar and also set specific days (such as Christmas day) closed as well.
 * A capacity system, allows you to limit the number of bookings per hour.
 * Customisable customer and admin emails.
 * Built in tags to easily add info to emails such as reservation date, party size, etc.
@@ -26,7 +27,7 @@ ResRes is a fully featured restaurant reservation and menu system. Create custom
 * Themeroller styled forms ( Smoothness only )
 * Menu creation is a breeze thanks to using WordPress Custom Post Types.
 * Each dish can be added to a section named whatever you like (Starters, Main Courses, etc).
-* Each section can be re-ordered via a drag an drop interface or via the shortcode settings.
+* Each section can be re-ordered via a drag and drop interface or via the shortcode settings.
 * Comes with the default template: two column layout.
 
 ####Premium Version
@@ -39,7 +40,7 @@ ResRes is a fully featured restaurant reservation and menu system. Create custom
 * Cancellation form available 
 * Themeroller styled forms ( All the default jQuery UI Themeroller styles )
 * If you need more than one menu, the shortcodes allow for different sections and event templates to be shown. 
-* More templates available in the  version  - columns, chalkboard, grid and accordion.
+* More templates available - list, chalkboard, grid, accordion and accordion columns.
 * Easily assign allergen information or wine type (dry, full bodied, etc) to a dish in text or icon form. 
 * Easily add chili icons to denote spicy heat! 
 
@@ -105,6 +106,15 @@ It will email you. With the **[PRO](http://deftdev.com/downloads/resres "deftDEV
 3. Opening times and location
 4. One of the settings pages
 == Changelog ==
+
+= 1.0.2.f =
+* FEATURE: added ability to select specific days to disable in the calendar, e.g. Christmas day.
+* TWEAK: added support for mobile devices to disable the keypad when date and timepickers are selected.
+* TWEAK: opening times shortcode CSS tweaks.
+* FIX: Added a fix where people in a negative timezone (e.g. UTC -5) had their disabled days moved back a day.
+
+= 1.0.1.f =
+* FIX: stopped themeroller style from disappearing when form options saved.
 
 = 1.0.0.f =
 * Initial public release.

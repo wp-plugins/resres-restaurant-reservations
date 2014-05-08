@@ -278,12 +278,13 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 	overflow: hidden;
 }
 .resres_address_time_block {
-	width: 50%;
+	width: 30%; /*50%;*/
 	float: left;
 }
 
 .resres_time_wrapper {
 	border: none !important;
+	max-width: 600px;
 }
 
 .resres_address {
@@ -335,10 +336,11 @@ padding: 0;
 
 
 .resres_map_canvas_container {
-    display: inline-block;
-    position: relative;
-    width: 49%;
-    margin-left: 1%;
+	display: inline-block;
+	position: relative;
+	width: 48%;
+	margin-left: 1%;
+	border: #979797 thin solid;
 }
 #dummy {
     padding-top: 75%; /* 4:3 aspect ratio */

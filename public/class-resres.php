@@ -28,7 +28,7 @@ class ResRes {
 	 *
 	 * @var     string
 	 */
-	const VERSION = '1.0.0.f';
+	const VERSION = '1.0.2.f';
 
 	/**
 	 * Database version
@@ -587,6 +587,14 @@ class ResRes {
 			if( isset( $options['resres_day_of_week_sun_from_two']) ) { $su3 = $this->resres_time_convert($options['resres_day_of_week_sun_from_two']); } else { $su3 = ''; }
 			if( isset( $options['resres_day_of_week_sun_to_two']) ) { $su4 = $this->resres_time_convert($options['resres_day_of_week_sun_to_two']); } else { $su4 = ''; }
 
+
+
+	$override_options = $options['resres_overrides'];
+    $dis_dates = str_replace(array("\r\n", "\r"), "\n", $options['resres_overrides']);
+    $overrides = explode("\n", $dis_dates);
+    $overrides = array_filter($overrides);
+
+
 		wp_localize_script('resres-anytime', 'resres_time_vars', array(
 			'open_monday'			=>	isset( $options['resres_day_of_week_mon'] ),
 			'open_tuesday'			=>	isset( $options['resres_day_of_week_tue'] ),
@@ -627,7 +635,10 @@ class ResRes {
 			'time_format'			=>	$timef,
 			'date_format'			=>	$datef,
 
-			'max_capacity' 			=> 	isset($options['resres_max_hourly_capacity'])
+			'max_capacity' 			=> 	isset($options['resres_max_hourly_capacity']),
+
+			'overrides' => $overrides
+
 			)
 		);
 	}

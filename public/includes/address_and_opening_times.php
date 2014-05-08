@@ -42,8 +42,6 @@ $sun_times2 = '';
 
 
 
-
-
 		$tue_open = $options['resres_day_of_week_tue'];
 		if($tue_open == 0) { $tue_times = __('Closed'); } else { $tue_times = date( $time_format, strtotime( $options['resres_day_of_week_tue_from_one'] ) ) . " - " . date( $time_format, strtotime( $options['resres_day_of_week_tue_to_one'] ) ); }
 		if( $options['resres_day_of_week_tue_from_two'] != '' &&  $tue_open == 1 ) { $tue_times2 .= " " . date( $time_format, strtotime( $options['resres_day_of_week_tue_from_two'] ) ) . " - " . date( $time_format, strtotime( $options['resres_day_of_week_tue_to_two'] ) ); }
@@ -68,6 +66,21 @@ $sun_times2 = '';
 		if($sun_open == 0) { $sun_times = __('Closed'); } else { $sun_times = date( $time_format, strtotime( $options['resres_day_of_week_sun_from_one'] ) ) . " - " . date( $time_format, strtotime( $options['resres_day_of_week_sun_to_one'] ) ); }
 		if( $options['resres_day_of_week_sun_from_two'] != '' &&  $sun_open == 1 ) { $sun_times2 .= " " . date( $time_format, strtotime( $options['resres_day_of_week_sun_from_two'] ) ) . " - " . date( $time_format, strtotime( $options['resres_day_of_week_sun_to_two'] ) ); }
 
+
+if(
+$options['resres_day_of_week_mon_from_two'] != '' ||
+$options['resres_day_of_week_tue_from_two'] != '' ||
+$options['resres_day_of_week_wed_from_two'] != '' ||
+$options['resres_day_of_week_thu_from_two'] != '' ||
+$options['resres_day_of_week_fri_from_two'] != '' ||
+$options['resres_day_of_week_sat_from_two'] != '' ||
+$options['resres_day_of_week_sun_from_two'] != ''
+) {
+	$display_sitting_headers = "true";
+}
+else {
+	$display_sitting_headers = "false";
+}
 
 
 /*meta*/
@@ -118,6 +131,7 @@ if($sun_open == 0) { $meta_sun = __('Closed'); }
 
 
 <table class="resres_address">
+
  <colgroup>
        <col span="1" style="width: 5%;">
        <col span="1" style="width: 95%;">
@@ -125,7 +139,7 @@ if($sun_open == 0) { $meta_sun = __('Closed'); }
 
 <?php if( $options['address_name'] != '' ) { ?>
 <tr>
-	<td><span aria-hidden="true" data-icon="&#xe608;" class="resres_address_icons resres_phone_icon" title="<?php echo __('Address'); ?>"></span></td>
+	<td><span aria-hidden="true" data-icon="&#xe616;" class="resres_address_icons resres_phone_icon" title="<?php echo __('Address'); ?>"></span></td>
 	<td><span itemprop="name"><?php echo $options['address_name']; ?></span></td>
 </tr>
 <?php } ?>
@@ -200,6 +214,16 @@ if($sun_open == 0) { $meta_sun = __('Closed'); }
        <col span="1" style="width: 40%;">
        <col span="1" style="width: 40%;">
     </colgroup>
+
+<?php if($display_sitting_headers == "true") { ?>
+<thead>
+	<tr>
+		<th></th>
+		<th><?php echo __('Sitting One'); ?></th>
+		<th><?php echo __('Sitting Two'); ?></th>
+	</tr>	
+</thead>
+<?php } ?>
 
 		<tr>
 			<td><meta itemprop="openingHours" content="Mo <?php echo $meta_mon; ?>"><?php echo __('Monday: '); ?></td>
