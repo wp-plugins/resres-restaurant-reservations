@@ -3,8 +3,8 @@ Contributors: deftdev
 Donate link: http://deftdev.com/
 Tags: restaurant, reservation, booking, menu, 
 Requires at least: 3.7.1
-Tested up to: 3.9
-Stable tag: 1.0.2.f
+Tested up to: 3.9.1
+Stable tag: 1.0.3.f
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -106,6 +106,9 @@ It will email you. With the **[PRO](http://deftdev.com/downloads/resres "deftDEV
 3. Opening times and location
 4. One of the settings pages
 == Changelog ==
+
+= 1.0.3.f =
+* FIX: resolved some undefined index notices
 
 = 1.0.2.f =
 * FEATURE: added ability to select specific days to disable in the calendar, e.g. Christmas day.

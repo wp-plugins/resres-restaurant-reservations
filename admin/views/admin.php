@@ -43,7 +43,8 @@
 
 	<?php
 	$active_tab = isset( $_GET[ 'tab' ] ) ? $_GET[ 'tab' ] : 'general_options';
-	$tabactive1 =''; $tabactive2 =''; $tabactive3 = '';
+	$tabactive1 =''; $tabactive2 =''; $tabactive3 = ''; $tabactive4 =''; $tabactive5 ='';
+
 
 	if( $active_tab == 'general_options' ) {
 	$tabactive1= "activetab";
