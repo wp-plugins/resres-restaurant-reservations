@@ -28,7 +28,7 @@ class ResRes {
 	 *
 	 * @var     string
 	 */
-	const VERSION = '1.0.3.f';
+	const VERSION = '1.0.4.f';
 
 	/**
 	 * Database version
@@ -713,7 +713,7 @@ class ResRes {
 
 public function resres_time_convert($time) {
 
-	if( empty($time) ) { return false; }
+	if( empty($time) ) { return  '00:00'; }
 
 	$x = explode(':', $time);
 		$y = $x[1];
