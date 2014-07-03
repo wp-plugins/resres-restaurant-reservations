@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ResRes 1.3.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/plugins/resres\n"
-"POT-Creation-Date: 2014-05-08 09:25+0200\n"
-"PO-Revision-Date: 2014-05-08 09:26+0200\n"
+"POT-Creation-Date: 2014-07-03 19:41+0200\n"
+"PO-Revision-Date: 2014-07-03 19:42+0200\n"
 "Last-Translator: FULL NAME <email@example.com>\n"
 "Language-Team: deftDEV <team@deftdev.com>\n"
 "Language: en\n"
@@ -45,7 +45,7 @@ msgstr ""
 msgid "<span id=\"resres_sucmsg\"> - Reservation added successfully</span>"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:684 ../admin/views/admin.php:65
+#: ../admin/class-resres-admin.php:684 ../admin/views/admin.php:66
 msgid "General Options"
 msgstr ""
 
@@ -105,7 +105,7 @@ msgid "Restaurant name"
 msgstr ""
 
 #: ../admin/class-resres-admin.php:835
-#: ../public/includes/address_and_opening_times.php:142
+#: ../public/includes/address_and_opening_times.php:174
 msgid "Address"
 msgstr ""
 
@@ -134,7 +134,7 @@ msgid "Telephone"
 msgstr ""
 
 #: ../admin/class-resres-admin.php:870
-#: ../public/includes/address_and_opening_times.php:180
+#: ../public/includes/address_and_opening_times.php:212
 msgid "Fax"
 msgstr ""
 
@@ -171,35 +171,35 @@ msgstr ""
 msgid "Second sitting from"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:921
+#: ../admin/class-resres-admin.php:921 ../public/class-resres.php:679
 msgid "Mon"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:935
+#: ../admin/class-resres-admin.php:935 ../public/class-resres.php:679
 msgid "Tue"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:946
+#: ../admin/class-resres-admin.php:946 ../public/class-resres.php:679
 msgid "Wed"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:957
+#: ../admin/class-resres-admin.php:957 ../public/class-resres.php:679
 msgid "Thu"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:968
+#: ../admin/class-resres-admin.php:968 ../public/class-resres.php:679
 msgid "Fri"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:979
+#: ../admin/class-resres-admin.php:979 ../public/class-resres.php:679
 msgid "Sat"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:990
+#: ../admin/class-resres-admin.php:990 ../public/class-resres.php:679
 msgid "Sun"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:1110 ../admin/views/admin.php:66
+#: ../admin/class-resres-admin.php:1110 ../admin/views/admin.php:67
 msgid "Reservation Form Options"
 msgstr ""
 
@@ -207,7 +207,7 @@ msgstr ""
 msgid "Max. Party Size"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:1334 ../admin/views/admin.php:67
+#: ../admin/class-resres-admin.php:1334 ../admin/views/admin.php:68
 msgid "Email Options"
 msgstr ""
 
@@ -247,7 +247,7 @@ msgstr ""
 msgid "Available email tags"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:1599 ../admin/views/admin.php:68
+#: ../admin/class-resres-admin.php:1599 ../admin/views/admin.php:69
 msgid "Menu Ordering"
 msgstr ""
 
@@ -389,7 +389,7 @@ msgid "Phone number"
 msgstr ""
 
 #: ../admin/views/reservations.php:95 ../admin/views/reservations.php:146
-#: ../public/includes/address_and_opening_times.php:186
+#: ../public/includes/address_and_opening_times.php:218
 msgid "Email"
 msgstr ""
 
@@ -410,7 +410,7 @@ msgid "Currently displaying:"
 msgstr ""
 
 #: ../admin/views/reservations.php:145
-#: ../public/includes/address_and_opening_times.php:174
+#: ../public/includes/address_and_opening_times.php:206
 msgid "Phone"
 msgstr ""
 
@@ -422,107 +422,263 @@ msgstr ""
 msgid "Cancelled"
 msgstr ""
 
-#: ../public/class-resres.php:818
+#: ../public/class-resres.php:678
+msgid "Sunday"
+msgstr ""
+
+#: ../public/class-resres.php:678
+msgid "Monday"
+msgstr ""
+
+#: ../public/class-resres.php:678
+msgid "Tuesday"
+msgstr ""
+
+#: ../public/class-resres.php:678
+msgid "Wednesday"
+msgstr ""
+
+#: ../public/class-resres.php:678
+msgid "Thursday"
+msgstr ""
+
+#: ../public/class-resres.php:678
+msgid "Friday"
+msgstr ""
+
+#: ../public/class-resres.php:678
+msgid "Saturday"
+msgstr ""
+
+#: ../public/class-resres.php:680
+msgid "Su"
+msgstr ""
+
+#: ../public/class-resres.php:680
+msgid "Mo"
+msgstr ""
+
+#: ../public/class-resres.php:680
+msgid "Tu"
+msgstr ""
+
+#: ../public/class-resres.php:680
+msgid "We"
+msgstr ""
+
+#: ../public/class-resres.php:680
+msgid "Th"
+msgstr ""
+
+#: ../public/class-resres.php:680
+msgid "Fr"
+msgstr ""
+
+#: ../public/class-resres.php:680
+msgid "Sa"
+msgstr ""
+
+#: ../public/class-resres.php:681
+msgid "January"
+msgstr ""
+
+#: ../public/class-resres.php:681
+msgid "February"
+msgstr ""
+
+#: ../public/class-resres.php:681
+msgid "March"
+msgstr ""
+
+#: ../public/class-resres.php:681
+msgid "April"
+msgstr ""
+
+#: ../public/class-resres.php:681 ../public/class-resres.php:682
+msgid "May"
+msgstr ""
+
+#: ../public/class-resres.php:681
+msgid "June"
+msgstr ""
+
+#: ../public/class-resres.php:681
+msgid "July"
+msgstr ""
+
+#: ../public/class-resres.php:681
+msgid "August"
+msgstr ""
+
+#: ../public/class-resres.php:681
+msgid "September"
+msgstr ""
+
+#: ../public/class-resres.php:681
+msgid "October"
+msgstr ""
+
+#: ../public/class-resres.php:681
+msgid "November"
+msgstr ""
+
+#: ../public/class-resres.php:681
+msgid "December"
+msgstr ""
+
+#: ../public/class-resres.php:682
+msgid "Jan"
+msgstr ""
+
+#: ../public/class-resres.php:682
+msgid "Feb"
+msgstr ""
+
+#: ../public/class-resres.php:682
+msgid "Mar"
+msgstr ""
+
+#: ../public/class-resres.php:682
+msgid "Apr"
+msgstr ""
+
+#: ../public/class-resres.php:682
+msgid "Jun"
+msgstr ""
+
+#: ../public/class-resres.php:682
+msgid "Jul"
+msgstr ""
+
+#: ../public/class-resres.php:682
+msgid "Aug"
+msgstr ""
+
+#: ../public/class-resres.php:682
+msgid "Sep"
+msgstr ""
+
+#: ../public/class-resres.php:682
+msgid "Oct"
+msgstr ""
+
+#: ../public/class-resres.php:682
+msgid "Nov"
+msgstr ""
+
+#: ../public/class-resres.php:682
+msgid "Dec"
+msgstr ""
+
+#: ../public/class-resres.php:683
+msgid "Next"
+msgstr ""
+
+#: ../public/class-resres.php:684
+msgid "Prev"
+msgstr ""
+
+#: ../public/class-resres.php:864
 msgid ""
 "<div class=\"res_clearmargin\"><p class=\"resres_error_message\">Sorry, the "
 "restuarant is fully booked for that time. Please choose another time and "
 "resubmit the form.</p></div>"
 msgstr ""
 
-#: ../public/class-resres.php:829
+#: ../public/class-resres.php:875
 msgid ""
 "<div class=\"res_clearmargin\"><p class=\"resres_error_message\">The captcha "
 "was not entered correctly. Please try it again.</p></div>"
 msgstr ""
 
-#: ../public/class-resres.php:853
+#: ../public/class-resres.php:899
 msgid ""
 "<div class=\"res_clearmargin\"><p class=\"resres_error_message\">The "
 "reCAPTCHA was not entered correctly. Please try it again.</p></div>"
 msgstr ""
 
-#: ../public/class-resres.php:1178
+#: ../public/class-resres.php:1224
 msgid "No sections created yet."
 msgstr ""
 
-#: ../public/class-resres.php:1259
+#: ../public/class-resres.php:1305
 msgid "Reservation not found. Please check the ID and try again."
 msgstr ""
 
-#: ../public/class-resres.php:1262
+#: ../public/class-resres.php:1308
 msgid "Reservation cancelled."
 msgstr ""
 
-#: ../public/class-resres.php:1414 ../public/class-resres.php:1459
-#: ../public/class-resres.php:1462 ../public/class-resres.php:1517
-#: ../public/class-resres.php:1518 ../public/class-resres.php:1545
-#: ../public/class-resres.php:1546
+#: ../public/class-resres.php:1460 ../public/class-resres.php:1505
+#: ../public/class-resres.php:1508 ../public/class-resres.php:1563
+#: ../public/class-resres.php:1564 ../public/class-resres.php:1591
+#: ../public/class-resres.php:1592
 msgid " "
 msgstr ""
 
-#: ../public/class-resres.php:1490
+#: ../public/class-resres.php:1536
 msgid "Spicy hot!"
 msgstr ""
 
-#: ../public/includes/address_and_opening_times.php:32
-#: ../public/includes/address_and_opening_times.php:39
-#: ../public/includes/address_and_opening_times.php:46
-#: ../public/includes/address_and_opening_times.php:50
-#: ../public/includes/address_and_opening_times.php:54
-#: ../public/includes/address_and_opening_times.php:58
-#: ../public/includes/address_and_opening_times.php:62
-#: ../public/includes/address_and_opening_times.php:66
+#: ../public/includes/address_and_opening_times.php:74
+#: ../public/includes/address_and_opening_times.php:78
+#: ../public/includes/address_and_opening_times.php:83
+#: ../public/includes/address_and_opening_times.php:86
 #: ../public/includes/address_and_opening_times.php:89
-#: ../public/includes/address_and_opening_times.php:93
-#: ../public/includes/address_and_opening_times.php:97
-#: ../public/includes/address_and_opening_times.php:101
-#: ../public/includes/address_and_opening_times.php:105
-#: ../public/includes/address_and_opening_times.php:109
-#: ../public/includes/address_and_opening_times.php:113
+#: ../public/includes/address_and_opening_times.php:92
+#: ../public/includes/address_and_opening_times.php:95
+#: ../public/includes/address_and_opening_times.php:98
+#: ../public/includes/address_and_opening_times.php:121
+#: ../public/includes/address_and_opening_times.php:125
+#: ../public/includes/address_and_opening_times.php:129
+#: ../public/includes/address_and_opening_times.php:133
+#: ../public/includes/address_and_opening_times.php:137
+#: ../public/includes/address_and_opening_times.php:141
+#: ../public/includes/address_and_opening_times.php:145
 msgid "Closed"
 msgstr ""
 
-#: ../public/includes/address_and_opening_times.php:128
+#: ../public/includes/address_and_opening_times.php:160
 msgid "Contact Us"
 msgstr ""
 
-#: ../public/includes/address_and_opening_times.php:205
+#: ../public/includes/address_and_opening_times.php:237
 msgid "Opening Times"
 msgstr ""
 
-#: ../public/includes/address_and_opening_times.php:222
+#: ../public/includes/address_and_opening_times.php:254
 msgid "Sitting One"
 msgstr ""
 
-#: ../public/includes/address_and_opening_times.php:223
+#: ../public/includes/address_and_opening_times.php:255
 msgid "Sitting Two"
 msgstr ""
 
-#: ../public/includes/address_and_opening_times.php:229
+#: ../public/includes/address_and_opening_times.php:261
 msgid "Monday: "
 msgstr ""
 
-#: ../public/includes/address_and_opening_times.php:234
+#: ../public/includes/address_and_opening_times.php:266
 msgid "Tuesday: "
 msgstr ""
 
-#: ../public/includes/address_and_opening_times.php:239
+#: ../public/includes/address_and_opening_times.php:271
 msgid "Wednesday: "
 msgstr ""
 
-#: ../public/includes/address_and_opening_times.php:244
+#: ../public/includes/address_and_opening_times.php:276
 msgid "Thursday: "
 msgstr ""
 
-#: ../public/includes/address_and_opening_times.php:249
+#: ../public/includes/address_and_opening_times.php:281
 msgid "Friday: "
 msgstr ""
 
-#: ../public/includes/address_and_opening_times.php:254
+#: ../public/includes/address_and_opening_times.php:286
 msgid "Saturday: "
 msgstr ""
 
-#: ../public/includes/address_and_opening_times.php:259
+#: ../public/includes/address_and_opening_times.php:291
 msgid "Sunday: "
 msgstr ""
 

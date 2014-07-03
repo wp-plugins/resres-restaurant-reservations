@@ -709,6 +709,17 @@ if( false == get_option( 'resres_options' ) ) {
 	);
 
 	add_settings_field(
+		'resres_overrides',                      // ID used to identify the field throughout the theme
+		__('Override opening times: <br> Enter one date per line. Please use the Month-Date format, e.g. for 25th December use 12-25'),                           // The label to the left of the option interface element
+		array($this, 'resres_overrides_callback'),   // The name of the function responsible for rendering the option interface
+		'resres_options',                          // The page on which this option will be displayed
+		'general_settings_section',         // The name of the section to which this field belongs
+		array(                              // The array of arguments to pass to the callback. In this case, just a description.
+		    __('Please do not use leading zeros. E.g. if the date you want to exclude is January the first, write it as 1-1, not 01-01')
+		)
+	);
+	
+	add_settings_field(
 		'resres_currency',                      // ID used to identify the field throughout the theme
 		__('Currency symbol'),                           // The label to the left of the option interface element
 		array($this, 'resres_currency_callback'),   // The name of the function responsible for rendering the option interface
@@ -746,7 +757,11 @@ if( false == get_option( 'resres_options' ) ) {
 	);
 
 
-
+	register_setting(
+	    'resres_options',
+	    'resres_options'
+	);
+	
 
 	register_setting(
 	    'resres_options',
@@ -992,7 +1007,16 @@ public function resres_dayofweek_callback($args) {
 
 }
 
+public function resres_overrides_callback($args) {
 
+    $options = get_option('resres_options');
+
+    $html = '<textarea cols="25" rows="10" id="resres_overrides" name="resres_options[resres_overrides]">' . $options['resres_overrides'] . '</textarea>';
+    $html .= '<label for="show_content" style="vertical-align:top"> '  . $args[0] . '</label>';
+
+    echo $html;
+
+} // end resres_overrides_callback
 
 public function resres_currency_callback($args) {
 
@@ -1469,7 +1493,7 @@ public function resres_regform_admin_emails_callback($args) {
 
     $options = get_option('resres_email_options');
 
-    $html = '<input type="checkbox" id="admin_emails" name="resres_email_options[admin_emails]" value="1" ' . checked(1, $options['admin_emails'], false) . '/>';
+    $html = '<input type="checkbox" id="admin_emails" name="resres_email_options[admin_emails]" value="1" ' . checked(1, isset($options['admin_emails']), false) . '/>';
 
     $html .= '<label for="show_content"> '  . $args[0] . '</label>';
 

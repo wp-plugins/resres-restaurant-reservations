@@ -78,7 +78,7 @@ $counter = 0;
 
 										<div class="resres_dish_content">
 											<span class="resres_dish_thumbnail">
-											<?php if(!$options['resres_disable_featured_images']) { echo the_post_thumbnail('thumbnail'); } ?>
+											<?php if(!isset($options['resres_disable_featured_images']) ) { echo the_post_thumbnail( array(400,400) ); } ?>
 											</span>
 											<?php
 											the_excerpt();

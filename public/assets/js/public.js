@@ -97,7 +97,14 @@ $('.usst_widget_datepicker').datepicker({
 	altFormat: "yy-mm-dd",
   	altField: "#resres_hidden_date",
   	firstDay: 1,
-	beforeShowDay: setCustomDate
+	beforeShowDay: setCustomDate,
+	dayNames: resres_time_vars.dayNames,
+	dayNamesMin: resres_time_vars.dayNamesMin,
+	dayNamesShort: resres_time_vars.dayNamesShort,
+	nextText: resres_time_vars.nextText,
+	prevText: resres_time_vars.prevText,
+	monthNames: resres_time_vars.monthNames,
+	monthNamesShort: resres_time_vars.monthNamesShort
     });
 
 $('.hasPicker').datepicker({
@@ -106,6 +113,13 @@ $('.hasPicker').datepicker({
 	altFormat: "yy-mm-dd",
   	altField: "#resres_hidden_date",
   	firstDay: 1,
+  	dayNames: resres_time_vars.dayNames,
+	dayNamesMin: resres_time_vars.dayNamesMin,
+	dayNamesShort: resres_time_vars.dayNamesShort,
+	nextText: resres_time_vars.nextText,
+	prevText: resres_time_vars.prevText,
+	monthNames: resres_time_vars.monthNames,
+	monthNamesShort: resres_time_vars.monthNamesShort,
 	beforeShowDay: setCustomDate,
 	onSelect: function(){
 	le_time_picker();

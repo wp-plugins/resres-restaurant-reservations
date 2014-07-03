@@ -28,7 +28,7 @@ class ResRes {
 	 *
 	 * @var     string
 	 */
-	const VERSION = '1.0.4.f';
+	const VERSION = '1.0.5.f';
 
 	/**
 	 * Database version
@@ -558,34 +558,68 @@ class ResRes {
 
 
 //all this shit to stop notices.... yey.
-			if( isset( $options['resres_day_of_week_mon_from_one']) ) { $m1 = $this->resres_time_convert($options['resres_day_of_week_mon_from_one']); } else { $m1 = ''; }
-			if( isset( $options['resres_day_of_week_mon_to_one']) ) { $m2 = $this->resres_time_convert($options['resres_day_of_week_mon_to_one']); } else { $m2 = ''; }
-			if( isset( $options['resres_day_of_week_mon_from_two']) ) { $m3 = $this->resres_time_convert($options['resres_day_of_week_mon_from_two']); } else { $m3 = ''; }
-			if( isset( $options['resres_day_of_week_mon_to_two']) ) { $m4 = $this->resres_time_convert($options['resres_day_of_week_mon_to_two']); } else { $m4 = ''; }
-			if( isset( $options['resres_day_of_week_tue_from_one']) ) { $t1 = $this->resres_time_convert($options['resres_day_of_week_tue_from_one']); } else { $t1 = ''; }
-			if( isset( $options['resres_day_of_week_tue_to_one']) ) { $t2 = $this->resres_time_convert($options['resres_day_of_week_tue_to_one']); } else { $t2 = ''; }
-			if( isset( $options['resres_day_of_week_tue_from_two']) ) { $t3 = $this->resres_time_convert($options['resres_day_of_week_tue_from_two']); } else { $t3 = ''; }
-			if( isset( $options['resres_day_of_week_tue_to_two']) ) { $t4 = $this->resres_time_convert($options['resres_day_of_week_tue_to_two']); } else { $t4 = ''; }
-			if( isset( $options['resres_day_of_week_wed_from_one']) ) { $w1 = $this->resres_time_convert($options['resres_day_of_week_wed_from_one']); } else { $w1 = ''; }
-			if( isset( $options['resres_day_of_week_wed_to_one']) ) { $w2 = $this->resres_time_convert($options['resres_day_of_week_wed_to_one']); } else { $w2 = ''; }
-			if( isset( $options['resres_day_of_week_wed_from_two']) ) { $w3 = $this->resres_time_convert($options['resres_day_of_week_wed_from_two']); } else { $w3 = ''; }
-			if( isset( $options['resres_day_of_week_wed_to_two']) ) { $w4 = $this->resres_time_convert($options['resres_day_of_week_wed_to_two']); } else { $w4 = ''; }
-			if( isset( $options['resres_day_of_week_thu_from_one']) ) { $th1 = $this->resres_time_convert($options['resres_day_of_week_thu_from_one']); } else { $th1 = ''; }
-			if( isset( $options['resres_day_of_week_thu_to_one']) ) { $th2 = $this->resres_time_convert($options['resres_day_of_week_thu_to_one']); } else { $th2 = ''; }
-			if( isset( $options['resres_day_of_week_thu_from_two']) ) { $th3 = $this->resres_time_convert($options['resres_day_of_week_thu_from_two']); } else { $th3 = ''; }
-			if( isset( $options['resres_day_of_week_thu_to_two']) ) { $th4 = $this->resres_time_convert($options['resres_day_of_week_thu_to_two']); } else { $th4 = ''; }
-			if( isset( $options['resres_day_of_week_fri_from_one']) ) { $f1 = $this->resres_time_convert($options['resres_day_of_week_fri_from_one']); } else { $f1 = ''; }
-			if( isset( $options['resres_day_of_week_fri_to_one']) ) { $f2 = $this->resres_time_convert($options['resres_day_of_week_fri_to_one']); } else { $f2 = ''; }
-			if( isset( $options['resres_day_of_week_fri_from_two']) ) { $f3 = $this->resres_time_convert($options['resres_day_of_week_fri_from_two']); } else { $f3 = ''; }
-			if( isset( $options['resres_day_of_week_fri_to_two']) ) { $f4 = $this->resres_time_convert($options['resres_day_of_week_fri_to_two']); } else { $f4 = ''; }
-			if( isset( $options['resres_day_of_week_sat_from_one']) ) { $s1 = $this->resres_time_convert($options['resres_day_of_week_sat_from_one']); } else { $s1 = ''; }
-			if( isset( $options['resres_day_of_week_sat_to_one']) ) { $s2 = $this->resres_time_convert($options['resres_day_of_week_sat_to_one']); } else { $s2 = ''; }
-			if( isset( $options['resres_day_of_week_sat_from_two']) ) { $s3 = $this->resres_time_convert($options['resres_day_of_week_sat_from_two']); } else { $s3 = ''; }
-			if( isset( $options['resres_day_of_week_sat_to_two']) ) { $s4 = $this->resres_time_convert($options['resres_day_of_week_sat_to_two']); } else { $s4 = ''; }
-			if( isset( $options['resres_day_of_week_sun_from_one']) ) { $su1 = $this->resres_time_convert($options['resres_day_of_week_sun_from_one']); } else { $su1 = ''; }
-			if( isset( $options['resres_day_of_week_sun_to_one']) ) { $su2 = $this->resres_time_convert($options['resres_day_of_week_sun_to_one']); } else { $su2 = ''; }
-			if( isset( $options['resres_day_of_week_sun_from_two']) ) { $su3 = $this->resres_time_convert($options['resres_day_of_week_sun_from_two']); } else { $su3 = ''; }
-			if( isset( $options['resres_day_of_week_sun_to_two']) ) { $su4 = $this->resres_time_convert($options['resres_day_of_week_sun_to_two']); } else { $su4 = ''; }
+			if( isset( $options['resres_day_of_week_mon_from_one']) && $options['resres_day_of_week_mon_from_one'] != '' ) 
+	{ $m1 = $this->resres_time_convert($options['resres_day_of_week_mon_from_one']); } else { $m1 = ':'; }
+if( isset( $options['resres_day_of_week_mon_to_one']) && $options['resres_day_of_week_mon_to_one'] != '' ) 
+	{ $m2 = $this->resres_time_convert($options['resres_day_of_week_mon_to_one']); } else { $m2 = ':'; }
+if( isset( $options['resres_day_of_week_mon_from_two']) && $options['resres_day_of_week_mon_from_two'] != '' ) 
+	{ $m3 = $this->resres_time_convert($options['resres_day_of_week_mon_from_two']); } else { $m3 = ':'; }
+if( isset( $options['resres_day_of_week_mon_to_two']) && $options['resres_day_of_week_mon_to_two'] != '' ) 
+	{ $m4 = $this->resres_time_convert($options['resres_day_of_week_mon_to_two']); } else { $m4 = ':'; }
+
+if( isset( $options['resres_day_of_week_tue_from_one']) && $options['resres_day_of_week_tue_from_one'] != ''  ) 
+	{ $t1 = $this->resres_time_convert($options['resres_day_of_week_tue_from_one']); } else { $t1 = ''; }
+if( isset( $options['resres_day_of_week_tue_to_one']) && $options['resres_day_of_week_tue_to_one'] != ''  ) 
+	{ $t2 = $this->resres_time_convert($options['resres_day_of_week_tue_to_one']); } else { $t2 = ''; }
+if( isset( $options['resres_day_of_week_tue_from_two']) && $options['resres_day_of_week_tue_from_two'] != ''  ) 
+	{ $t3 = $this->resres_time_convert($options['resres_day_of_week_tue_from_two']); } else { $t3 = ':'; }
+if( isset( $options['resres_day_of_week_tue_to_two']) && $options['resres_day_of_week_tue_to_two'] != ''  ) 
+	{ $t4 = $this->resres_time_convert($options['resres_day_of_week_tue_to_two']); } else { $t4 = ''; }
+
+if( isset( $options['resres_day_of_week_wed_from_one']) && $options['resres_day_of_week_wed_from_one'] != '' ) 
+	{ $w1 = $this->resres_time_convert($options['resres_day_of_week_wed_from_one']); } else { $w1 = ':'; }
+if( isset( $options['resres_day_of_week_wed_to_one']) && $options['resres_day_of_week_wed_to_one'] != '' ) 
+	{ $w2 = $this->resres_time_convert($options['resres_day_of_week_wed_to_one']); } else { $w2 = ':'; }
+if( isset( $options['resres_day_of_week_wed_from_two']) && $options['resres_day_of_week_wed_from_two'] != '' ) 
+	{ $w3 = $this->resres_time_convert($options['resres_day_of_week_wed_from_two']); } else { $w3 = ':'; }
+if( isset( $options['resres_day_of_week_wed_to_two']) && $options['resres_day_of_week_wed_to_two'] != '' ) 
+	{ $w4 = $this->resres_time_convert($options['resres_day_of_week_wed_to_two']); } else { $w4 = ':'; }
+
+if( isset( $options['resres_day_of_week_thu_from_one']) && $options['resres_day_of_week_thu_from_one'] != '' ) { 
+	$th1 = $this->resres_time_convert($options['resres_day_of_week_thu_from_one']); } else { $th1 = ':'; }
+if( isset( $options['resres_day_of_week_thu_to_one']) && $options['resres_day_of_week_thu_to_one'] != '' ) { 
+	$th2 = $this->resres_time_convert($options['resres_day_of_week_thu_to_one']); } else { $th2 = ':'; }
+if( isset( $options['resres_day_of_week_thu_from_two']) && $options['resres_day_of_week_thu_from_two'] != '' ) { 
+	$th3 = $this->resres_time_convert($options['resres_day_of_week_thu_from_two']); } else { $th3 = ':'; }
+if( isset( $options['resres_day_of_week_thu_to_two']) && $options['resres_day_of_week_thu_to_two'] != '' ) { 
+	$th4 = $this->resres_time_convert($options['resres_day_of_week_thu_to_two']); } else { $th4 = ':'; }
+
+if( isset( $options['resres_day_of_week_fri_from_one']) && $options['resres_day_of_week_fri_from_one'] != '' ) { 
+	$f1 = $this->resres_time_convert($options['resres_day_of_week_fri_from_one']); } else { $f1 = ':'; }
+if( isset( $options['resres_day_of_week_fri_to_one']) && $options['resres_day_of_week_fri_to_one'] != '' ) { 
+	$f2 = $this->resres_time_convert($options['resres_day_of_week_fri_to_one']); } else { $f2 = ':'; }
+if( isset( $options['resres_day_of_week_fri_from_two']) && $options['resres_day_of_week_fri_from_two'] != '' ) { 
+	$f3 = $this->resres_time_convert($options['resres_day_of_week_fri_from_two']); } else { $f3 = ':'; }
+if( isset( $options['resres_day_of_week_fri_to_two']) && $options['resres_day_of_week_fri_to_two'] != '' ) { 
+	$f4 = $this->resres_time_convert($options['resres_day_of_week_fri_to_two']); } else { $f4 = ':'; }
+
+if( isset( $options['resres_day_of_week_sat_from_one']) && $options['resres_day_of_week_sat_from_one'] != '' ) 
+	{ $s1 = $this->resres_time_convert($options['resres_day_of_week_sat_from_one']); } else { $s1 = ':'; }
+if( isset( $options['resres_day_of_week_sat_to_one']) && $options['resres_day_of_week_sat_to_one'] != '' ) 
+	{ $s2 = $this->resres_time_convert($options['resres_day_of_week_sat_to_one']); } else { $s2 = ':'; }
+if( isset( $options['resres_day_of_week_sat_from_two']) && $options['resres_day_of_week_sat_from_two'] != '' ) 
+	{ $s3 = $this->resres_time_convert($options['resres_day_of_week_sat_from_two']); } else { $s3 = ':'; }
+if( isset( $options['resres_day_of_week_sat_to_two']) && $options['resres_day_of_week_sat_to_two'] != '' ) 
+	{ $s4 = $this->resres_time_convert($options['resres_day_of_week_sat_to_two']); } else { $s4 = ':'; }
+
+if( isset( $options['resres_day_of_week_sun_from_one']) && $options['resres_day_of_week_sun_from_one'] != '' ) { 
+	$su1 = $this->resres_time_convert($options['resres_day_of_week_sun_from_one']); } else { $su1 = ':'; }
+if( isset( $options['resres_day_of_week_sun_to_one']) && $options['resres_day_of_week_sun_to_one'] != '' ) { 
+	$su2 = $this->resres_time_convert($options['resres_day_of_week_sun_to_one']); } else { $su2 = ':'; }
+if( isset( $options['resres_day_of_week_sun_from_two']) && $options['resres_day_of_week_sun_from_two'] != '' ) { 
+	$su3 = $this->resres_time_convert($options['resres_day_of_week_sun_from_two']); } else { $su3 = ':'; }
+if( isset( $options['resres_day_of_week_sun_to_two']) && $options['resres_day_of_week_sun_to_two'] != '' ) { 
+	$su4 = $this->resres_time_convert($options['resres_day_of_week_sun_to_two']); } else { $su4 = ':'; }
 
 
 	if( isset($options['resres_overrides']) ) { $override_options = $options['resres_overrides']; } else { $override_options = ''; }
@@ -631,13 +665,23 @@ class ResRes {
 			'sunday_to_one' 		=> 	$su2, //$this->resres_time_convert($options['resres_day_of_week_sun_to_one']),
 			'sunday_from_two' 		=> 	$su3, //$this->resres_time_convert($options['resres_day_of_week_sun_from_two']),
 			'sunday_to_two' 		=> 	$su4, //$this->resres_time_convert($options['resres_day_of_week_sun_to_two']),
-
+			
 			'time_format'			=>	$timef,
 			'date_format'			=>	$datef,
-
+			
 			'max_capacity' 			=> 	isset($options['resres_max_hourly_capacity']),
-
-			'overrides' => $overrides
+			
+			'overrides' 			=> $overrides,
+			
+			'recaptcha_style'		=>	$recaptcha_style,
+			
+			'dayNames'				=>	array( __('Sunday'), __('Monday'), __('Tuesday'), __('Wednesday'), __('Thursday'), __('Friday'), __('Saturday') ),
+			'dayNamesShort'			=>	array( __('Sun'), __('Mon'), __('Tue'), __('Wed'), __('Thu'), __('Fri'), __('Sat') ),
+			'dayNamesMin'			=>	array( __('Su'), __('Mo'), __('Tu'), __('We'), __('Th'), __('Fr'), __('Sa') ),
+			'monthNames'			=>	array( __('January'), __('February'), __('March'), __('April'), __('May'), __('June'), __('July'), __('August'), __('September'), __('October'), __('November'), __('December') ),
+			'monthNamesShort'		=>	array( __('Jan'), __('Feb'), __('Mar'), __('Apr'), __('May'), __('Jun'), __('Jul'), __('Aug'), __('Sep'), __('Oct'), __('Nov'), __('Dec') ),
+			'nextText'				=>	__('Next'),
+			'prevText'				=>	__('Prev'),
 
 			)
 		);

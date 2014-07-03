@@ -4,7 +4,7 @@ Donate link: http://deftdev.com/
 Tags: restaurant, reservation, booking, menu, 
 Requires at least: 3.7.1
 Tested up to: 3.9.1
-Stable tag: 1.0.4.f
+Stable tag: 1.0.5.f
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,13 +36,15 @@ ResRes is a fully featured restaurant reservation and menu system. Create custom
 
 * The built in admin reservation page, allows you to easily see how many people have booked on any given day. 
 * You can also mark customers as cancelled or arrived. 
-* Use the built in numeric captcha system or use reCAPTCHA 
-* Cancellation form available 
+* Allow users to select what section of your restaurant they would like to sit in.
+* Use the built in numeric captcha system or use reCAPTCHA .
+* Cancellation form available.
 * Themeroller styled forms ( All the default jQuery UI Themeroller styles )
 * If you need more than one menu, the shortcodes allow for different sections and event templates to be shown. 
-* More templates available - list, chalkboard, grid, accordion and accordion columns.
+* 6 more templates available - list, chalkboard, grid, simple, accordion and accordion columns.
 * Easily assign allergen information or wine type (dry, full bodied, etc) to a dish in text or icon form. 
 * Easily add chili icons to denote spicy heat! 
+* MailChimp integration.
 
 ####Support
 
@@ -106,6 +108,11 @@ It will email you. With the **[PRO](http://deftdev.com/downloads/resres "deftDEV
 3. Opening times and location
 4. One of the settings pages
 == Changelog ==
+
+= 1.0.5.f =
+* FIX: More fixes to the time selector.
+* TWEAK: CSS fixes for the menu template to improve responsiveness.
+* TWEAK: Added translation function for datepicker.
 
 = 1.0.4.f =
 * HOTFIX: The previous fix messed up the time selection, that is now fixed.
