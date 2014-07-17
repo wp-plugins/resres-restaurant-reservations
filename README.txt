@@ -4,7 +4,7 @@ Donate link: http://deftdev.com/
 Tags: restaurant, reservation, booking, menu, 
 Requires at least: 3.7.1
 Tested up to: 3.9.1
-Stable tag: 1.0.5.f
+Stable tag: 1.0.6.f
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -108,6 +108,10 @@ It will email you. With the **[PRO](http://deftdev.com/downloads/resres "deftDEV
 3. Opening times and location
 4. One of the settings pages
 == Changelog ==
+
+= 1.0.6.f =
+* TWEAK: Summer Sale notification
+* TWEAK: Minor internationalisation fixes.
 
 = 1.0.5.f =
 * FIX: More fixes to the time selector.

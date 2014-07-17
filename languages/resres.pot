@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ResRes 1.3.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/plugins/resres\n"
-"POT-Creation-Date: 2014-07-03 19:41+0200\n"
-"PO-Revision-Date: 2014-07-03 19:42+0200\n"
+"POT-Creation-Date: 2014-07-17 20:42+0200\n"
+"PO-Revision-Date: 2014-07-17 20:42+0200\n"
 "Last-Translator: FULL NAME <email@example.com>\n"
 "Language-Team: deftDEV <team@deftdev.com>\n"
 "Language: en\n"
@@ -19,259 +19,279 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
-#: ../admin/class-resres-admin.php:380 ../admin/class-resres-admin.php:381
-msgid "ResRes"
+#: ../admin/class-resres-admin.php:277
+msgid "Search"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:278
+msgid "No data available."
+msgstr ""
+
+#: ../admin/class-resres-admin.php:279
+msgid "Showing _START_ to _END_ of _TOTAL_ entries."
+msgstr ""
+
+#: ../admin/class-resres-admin.php:280
+msgid "Showing 0 to 0 of 0 entries."
+msgstr ""
+
+#: ../admin/class-resres-admin.php:281
+msgid "Filtered from _MAX_ total entries."
 msgstr ""
 
 #: ../admin/class-resres-admin.php:392 ../admin/class-resres-admin.php:393
+msgid "ResRes"
+msgstr ""
+
+#: ../admin/class-resres-admin.php:404 ../admin/class-resres-admin.php:405
 msgid "Reservations"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:401 ../admin/class-resres-admin.php:402
-#: ../admin/class-resres-admin.php:495
+#: ../admin/class-resres-admin.php:413 ../admin/class-resres-admin.php:414
+#: ../admin/class-resres-admin.php:507
 msgid "Settings"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:413 ../admin/class-resres-admin.php:414
+#: ../admin/class-resres-admin.php:425 ../admin/class-resres-admin.php:426
 #: ../public/includes/item_cpt.php:9
 msgid "Add New Dish"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:422 ../admin/class-resres-admin.php:423
+#: ../admin/class-resres-admin.php:434 ../admin/class-resres-admin.php:435
 msgid "Sections"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:646
+#: ../admin/class-resres-admin.php:658
 msgid "<span id=\"resres_sucmsg\"> - Reservation added successfully</span>"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:684 ../admin/views/admin.php:66
+#: ../admin/class-resres-admin.php:696 ../admin/views/admin.php:66
 msgid "General Options"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:691
+#: ../admin/class-resres-admin.php:703
 msgid "Restaurant information"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:702
+#: ../admin/class-resres-admin.php:714
 msgid "Days restaurant is open"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:713
+#: ../admin/class-resres-admin.php:725
 msgid ""
 "Override opening times: <br> Enter one date per line. Please use the Month-"
 "Date format, e.g. for 25th December use 12-25"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:718
+#: ../admin/class-resres-admin.php:730
 msgid ""
 "Please do not use leading zeros. E.g. if the date you want to exclude is "
 "January the first, write it as 1-1, not 01-01"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:724
+#: ../admin/class-resres-admin.php:736
 msgid "Currency symbol"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:729
+#: ../admin/class-resres-admin.php:741
 msgid "Default is $"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:735
+#: ../admin/class-resres-admin.php:747
 msgid "Disable menu images"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:799
+#: ../admin/class-resres-admin.php:811
 msgid "<p>The following shortcodes can be used on pages or posts</p>"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:800
+#: ../admin/class-resres-admin.php:812
 msgid "<p>[resres] - displays the reservations form</p>"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:801
+#: ../admin/class-resres-admin.php:813
 msgid "<p>[resresmenu] - displays the menu</p>"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:804
+#: ../admin/class-resres-admin.php:816
 msgid ""
 "<p><strong>Please see the <a href=\"http://www.deftdev.com/document/resres-"
 "documentation/\">documentation</a> for further information regarding the "
 "shortcodes.</strong></p>"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:830
+#: ../admin/class-resres-admin.php:842
 msgid "Restaurant name"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:835
+#: ../admin/class-resres-admin.php:847
 #: ../public/includes/address_and_opening_times.php:174
 msgid "Address"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:840
+#: ../admin/class-resres-admin.php:852
 msgid "Address line 2"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:845
+#: ../admin/class-resres-admin.php:857
 msgid "City"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:850
+#: ../admin/class-resres-admin.php:862
 msgid "State/Region"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:855
+#: ../admin/class-resres-admin.php:867
 msgid "Country"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:860
+#: ../admin/class-resres-admin.php:872
 msgid "Zip/Postal Code"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:865
+#: ../admin/class-resres-admin.php:877
 msgid "Telephone"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:870
+#: ../admin/class-resres-admin.php:882
 #: ../public/includes/address_and_opening_times.php:212
 msgid "Fax"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:875
+#: ../admin/class-resres-admin.php:887
 msgid "E-mail"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:880
+#: ../admin/class-resres-admin.php:892
 msgid "Facebook (url)"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:885
+#: ../admin/class-resres-admin.php:897
 msgid "Twitter (handle)"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:890
+#: ../admin/class-resres-admin.php:902
 msgid "Google Plus (user code)"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:910
+#: ../admin/class-resres-admin.php:922
 msgid "Open?"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:911
+#: ../admin/class-resres-admin.php:923
 msgid "First sitting from"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:912 ../admin/class-resres-admin.php:915
-#: ../admin/class-resres-admin.php:1524 ../admin/class-resres-admin.php:1553
+#: ../admin/class-resres-admin.php:924 ../admin/class-resres-admin.php:927
+#: ../admin/class-resres-admin.php:1536 ../admin/class-resres-admin.php:1565
 msgid "To"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:914
+#: ../admin/class-resres-admin.php:926
 msgid "Second sitting from"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:921 ../public/class-resres.php:679
+#: ../admin/class-resres-admin.php:933 ../public/class-resres.php:679
 msgid "Mon"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:935 ../public/class-resres.php:679
+#: ../admin/class-resres-admin.php:947 ../public/class-resres.php:679
 msgid "Tue"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:946 ../public/class-resres.php:679
+#: ../admin/class-resres-admin.php:958 ../public/class-resres.php:679
 msgid "Wed"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:957 ../public/class-resres.php:679
+#: ../admin/class-resres-admin.php:969 ../public/class-resres.php:679
 msgid "Thu"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:968 ../public/class-resres.php:679
+#: ../admin/class-resres-admin.php:980 ../public/class-resres.php:679
 msgid "Fri"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:979 ../public/class-resres.php:679
+#: ../admin/class-resres-admin.php:991 ../public/class-resres.php:679
 msgid "Sat"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:990 ../public/class-resres.php:679
+#: ../admin/class-resres-admin.php:1002 ../public/class-resres.php:679
 msgid "Sun"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:1110 ../admin/views/admin.php:67
+#: ../admin/class-resres-admin.php:1122 ../admin/views/admin.php:67
 msgid "Reservation Form Options"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:1118
+#: ../admin/class-resres-admin.php:1130
 msgid "Max. Party Size"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:1334 ../admin/views/admin.php:68
+#: ../admin/class-resres-admin.php:1346 ../admin/views/admin.php:68
 msgid "Email Options"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:1354
+#: ../admin/class-resres-admin.php:1366
 msgid "Disable emails to site admin"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:1365
+#: ../admin/class-resres-admin.php:1377
 msgid "Disable reservation emails to customer"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:1376
+#: ../admin/class-resres-admin.php:1388
 msgid "The customer email. <br>"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:1379
+#: ../admin/class-resres-admin.php:1391
 msgid "These tags can be used in your emails."
 msgstr ""
 
-#: ../admin/class-resres-admin.php:1410
+#: ../admin/class-resres-admin.php:1422
 msgid "The admin email."
 msgstr ""
 
-#: ../admin/class-resres-admin.php:1528 ../admin/class-resres-admin.php:1557
+#: ../admin/class-resres-admin.php:1540 ../admin/class-resres-admin.php:1569
 msgid "Cc"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:1532 ../admin/class-resres-admin.php:1561
+#: ../admin/class-resres-admin.php:1544 ../admin/class-resres-admin.php:1573
 msgid "Subject"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:1536 ../admin/class-resres-admin.php:1565
+#: ../admin/class-resres-admin.php:1548 ../admin/class-resres-admin.php:1577
 msgid "Message"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:1570
+#: ../admin/class-resres-admin.php:1582
 msgid "Available email tags"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:1599 ../admin/views/admin.php:69
+#: ../admin/class-resres-admin.php:1611 ../admin/views/admin.php:69
 msgid "Menu Ordering"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:1608
+#: ../admin/class-resres-admin.php:1620
 msgid "Order the menu sections"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:1624
+#: ../admin/class-resres-admin.php:1636
 msgid "Order the dishes"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:1677 ../admin/class-resres-admin.php:1691
+#: ../admin/class-resres-admin.php:1689 ../admin/class-resres-admin.php:1703
 msgid "Drag & drop to re-order"
 msgstr ""
 
-#: ../admin/class-resres-admin.php:1693
+#: ../admin/class-resres-admin.php:1705
 msgid "Dishes can only be re-ordered within their section."
 msgstr ""
 
-#: ../admin/class-resres-admin.php:1713
+#: ../admin/class-resres-admin.php:1725
 msgid "Please allocate a dish to a section."
 msgstr ""
 
-#: ../admin/class-resres-admin.php:1818
+#: ../admin/class-resres-admin.php:1870
 msgid "No sections found."
 msgstr ""
 
@@ -802,7 +822,11 @@ msgstr ""
 msgid "Nothing here right now..."
 msgstr ""
 
-#: ../public/views/cancel.php:6
+#: ../public/views/cancel.php:7
+msgid "Enter your reservation ID to cancel."
+msgstr ""
+
+#: ../public/views/cancel.php:10
 msgid "Cancel Reservation"
 msgstr ""
 

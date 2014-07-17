@@ -108,6 +108,10 @@ class ResRes_Admin {
 		add_action('created_menu_sections', array($this, 'resres_new_menu_section_term' ) );
 		add_action('delete_menu_sections', array($this, 'resres_deleted_menu_section_term' ) );
 
+		//summer sales July 2014
+		add_action('admin_notices', array( $this, 'resres_summer_2014') );
+		add_action('wp_ajax_resres_summer_2014_dismiss', array( $this, 'resres_summer_2014_dismiss') );
+
 	}
 
 	/**
@@ -174,6 +178,11 @@ class ResRes_Admin {
 
 		$screen = get_current_screen();
 		$isitresrespage = substr($screen->id, 0, 11);
+
+		$salecheck = get_option('resres_summer_sale');
+		if( $salecheck != 'false') {			
+			wp_enqueue_script( $this->plugin_slug . '-admin-script', plugins_url( 'assets/js/sale.js', __FILE__ ), array( 'jquery' ), ResRes::VERSION );
+		}
 
 
 		if ( $this->plugin_screen_hook_suffix == $screen->id || $isitresrespage == 'resres_page') {
@@ -262,11 +271,14 @@ class ResRes_Admin {
 			'sunday_to_one' 		=> 	$su2, //$this->resres_time_convert($options['resres_day_of_week_sun_to_one']),
 			'sunday_from_two' 		=> 	$su3, //$this->resres_time_convert($options['resres_day_of_week_sun_from_two']),
 			'sunday_to_two' 		=> 	$su4, //$this->resres_time_convert($options['resres_day_of_week_sun_to_two']),
-
 			'time_format'			=>	$timef,
 			'date_format'			=>	$datef,
-
-			'max_capacity' 			=> 	isset( $options['resres_max_hourly_capacity'])
+			'max_capacity' 			=> 	isset( $options['resres_max_hourly_capacity']),
+			'datatables_search'		=> __('Search'),
+			'datatables_emptyTable'	=> __('No data available.'),
+			'datatables_info'		=> __('Showing _START_ to _END_ of _TOTAL_ entries.'),
+			'datatables_infoEmpty'	=> __('Showing 0 to 0 of 0 entries.'),
+			'datatables_infoFiltered'	=> __('Filtered from _MAX_ total entries.')
 			)
 		);
 
@@ -1761,6 +1773,46 @@ public function resres_get_dishes_by_section() {
 
 
 
+    public function resres_summer_2014(){
+    	$x = get_option( 'resres_summer_sale' );
+    	if( $x == "false" ) { return false; }
+
+	    echo '
+		<style>
+			#resres_summer_2014_dismiss_wrap a {
+				text-decoration: underline;
+			}
+			a#resres_buy_now_button {
+				display: block;
+				width: 80px;
+				text-align:center;
+				text-decoration:none;
+			}
+			a#resres_buy_now_button:hover {
+				cursor: pointer;
+			}
+			#resres_buy_now_button {
+				border: none;
+				background-color:green;
+				padding:10px;
+				font-size: 18px;
+				color: #fff;
+				float:right;
+			}
+		</style>
+	    <div class="updated" id="resres_summer_2014_dismiss_wrap">
+	    <span style="float:right"><a href="#" id="resres_summer_2014_dismiss" target="_blank">Dismiss</a></span>
+	       <h3>ResRes Summer Sale</h3>
+	       	       <p><a href="http://www.deftdev.com/go/res-res-summer-special" id="resres_buy_now_button" target="_blank">Buy Now</a></p>
+
+	       <h4><strong><a href="http://www.deftdev.com/go/res-res-summer-special" target="_blank">Buy Now</a></strong> and get <strong>20%</strong> off ResRes Premium! Use the coupon code HAPPYSUMMER2014</h4>
+	       <p><strong>Buy before 1st of August</strong> and get ResRes Premium for 20% less and get more templates, an admin reservation tracker and <a href="http://www.deftdev.com/go/res-res-summer-special" target="_blank">many more features</a></p>
+	    </div>';
+	}
+    public function resres_summer_2014_dismiss(){
+	    add_option('resres_summer_sale', 'false');
+	    die();
+	}
 
 
 
@@ -1841,6 +1893,8 @@ public function resres_get_dishes_by_section() {
 	public function resres_datepicker_highlight() {
 
 	}
+
+
 
 
 } // END OF CLASS!
@@ -1932,7 +1986,11 @@ if (!class_exists('ResResTaxonomyFilter')){
                 $this->generate_taxonomy_options($tax_slug, $term->term_id, $level+1,$selected);
             }
 
+
+
         }
+
+
     }//end class
 }//end if
 new ResResTaxonomyFilter(array('dish' => array('menu_sections')));

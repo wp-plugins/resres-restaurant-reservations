@@ -28,7 +28,7 @@ class ResRes {
 	 *
 	 * @var     string
 	 */
-	const VERSION = '1.0.5.f';
+	const VERSION = '1.0.6.f';
 
 	/**
 	 * Database version
