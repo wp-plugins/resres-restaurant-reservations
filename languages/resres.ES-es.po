@@ -1,0 +1,1326 @@
+# Copyright (C) 2013 TODO
+# This file is distributed under the same license as the TODO package.
+msgid ""
+msgstr ""
+"Project-Id-Version: ResRes 1.3.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/plugins/resres\n"
+"POT-Creation-Date: 2014-07-17 20:40+0200\n"
+"PO-Revision-Date: 2014-07-31 16:38+0200\n"
+"Last-Translator: jelena kovacevic <jecajeca260@gmail.com>\n"
+"Language-Team: deftDEV <team@deftdev.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-KeywordsList: __;_e;_n;_x\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../admin/class-resres-admin.php:293
+msgid "Search"
+msgstr "Buscar"
+
+#: ../admin/class-resres-admin.php:294
+msgid "No data available."
+msgstr "No hay datos disponibles."
+
+#: ../admin/class-resres-admin.php:295
+msgid "Showing _START_ to _END_ of _TOTAL_ entries."
+msgstr "Mostrando _START_ a _END_ de _TOTAL_ entradas."
+
+#: ../admin/class-resres-admin.php:296
+msgid "Showing 0 to 0 of 0 entries."
+msgstr "Mostrando de 0 a 0 de 0 entradas."
+
+#: ../admin/class-resres-admin.php:297
+msgid "Filtered from _MAX_ total entries."
+msgstr "Filtrado de  _MAX_ entradas en total."
+
+#: ../admin/class-resres-admin.php:418 ../admin/class-resres-admin.php:419
+msgid "ResRes"
+msgstr "ResRes"
+
+#: ../admin/class-resres-admin.php:430 ../admin/class-resres-admin.php:431
+msgid "Reservations"
+msgstr "Reservaciones"
+
+#: ../admin/class-resres-admin.php:439 ../admin/class-resres-admin.php:440
+#: ../admin/class-resres-admin.php:961
+msgid "Settings"
+msgstr "Ajustes"
+
+#: ../admin/class-resres-admin.php:451 ../admin/class-resres-admin.php:452
+#: ../public/includes/item_cpt.php:9
+msgid "Add New Dish"
+msgstr "Adicionar Nuevo Plato"
+
+#: ../admin/class-resres-admin.php:460 ../admin/class-resres-admin.php:461
+#: ../public/includes/item_cpt.php:57 ../public/includes/item_cpt.php:71
+msgid "Menu Sections"
+msgstr "Secciones de Menú"
+
+#: ../admin/class-resres-admin.php:843
+msgid "From "
+msgstr "Desde"
+
+#: ../admin/class-resres-admin.php:853
+msgid "Up to "
+msgstr "Hasta"
+
+#: ../admin/class-resres-admin.php:857
+msgid "No dates selected"
+msgstr "No hay fechas seleccionadas"
+
+#: ../admin/class-resres-admin.php:1141
+msgid "<span id=\"resres_sucmsg\"> - Reservation added successfully</span>"
+msgstr ""
+"<span id=\"resres_sucmsg\"> - Reservación añadida satisfactoriamente</span>"
+
+#: ../admin/class-resres-admin.php:1199 ../admin/class-resres-admin.php:1201
+#: ../admin/class-resres-admin.php:1288 ../admin/class-resres-admin.php:1290
+#: ../public/class-resres.php:1199 ../public/class-resres.php:1201
+#: ../public/class-resres.php:1291 ../public/class-resres.php:1293
+msgid "Cancel Booking"
+msgstr "Cancelar Reserva"
+
+#: ../admin/class-resres-admin.php:1519
+msgid "No sections found."
+msgstr "No se encontraron secciones."
+
+#: ../admin/includes/meta_boxes.php:48
+msgid ""
+"That you can re-order how the sections are displayed on the menu from the <a "
+"target=\"_blank\" href=\""
+msgstr ""
+"Que usted puede reordenar cómo las secciones se muestran en el menú desde el "
+"<a target=\"_blank\" href=\""
+
+#: ../admin/includes/meta_boxes.php:51
+msgid ""
+"That you must allocate a dish to a section before it will show on the menu."
+msgstr ""
+"Que usted debe poner un plato en la sección antes de mostrarlo en el menú."
+
+#: ../admin/includes/meta_boxes.php:63
+msgid "Price"
+msgstr "Precio"
+
+#: ../admin/includes/meta_boxes.php:68
+msgid "Allergens and food warnings"
+msgstr "Alérgenos y advertencias de comida"
+
+#: ../admin/includes/meta_boxes.php:72
+msgid "Gluten"
+msgstr "Gluten"
+
+#: ../admin/includes/meta_boxes.php:77
+msgid "Wheat"
+msgstr "Trigo"
+
+#: ../admin/includes/meta_boxes.php:82
+msgid "Lactose"
+msgstr "Lactosa"
+
+#: ../admin/includes/meta_boxes.php:87
+msgid "Dairy"
+msgstr "Lácteo"
+
+#: ../admin/includes/meta_boxes.php:92
+msgid "Sugar"
+msgstr "Azúcar"
+
+#: ../admin/includes/meta_boxes.php:97
+msgid "Egg"
+msgstr "Huevo"
+
+#: ../admin/includes/meta_boxes.php:102
+msgid "Peanuts"
+msgstr "Cacahuetes"
+
+#: ../admin/includes/meta_boxes.php:114
+msgid "Fish"
+msgstr "Pescado"
+
+#: ../admin/includes/meta_boxes.php:119
+msgid "Shellfish"
+msgstr "Mariscos"
+
+#: ../admin/includes/meta_boxes.php:124
+msgid "Vegetarian"
+msgstr "Vegetariano"
+
+#: ../admin/includes/meta_boxes.php:129
+msgid "Vegan"
+msgstr "Vegano"
+
+#: ../admin/includes/meta_boxes.php:136
+msgid "How spicy is it?"
+msgstr "¿Cuán picante está?"
+
+#: ../admin/includes/meta_boxes.php:139
+msgid "Number of chilis"
+msgstr "Número de ajíes"
+
+#: ../admin/includes/meta_boxes.php:148
+msgid "White Wine"
+msgstr "Vino Blanco"
+
+#: ../admin/includes/meta_boxes.php:152
+msgid "Dry"
+msgstr "Seco"
+
+#: ../admin/includes/meta_boxes.php:157
+msgid "Medium Dry"
+msgstr "Medio Seco"
+
+#: ../admin/includes/meta_boxes.php:162
+msgid "Medium Sweet"
+msgstr "Medio Dulce"
+
+#: ../admin/includes/meta_boxes.php:167
+msgid "Sweet"
+msgstr "Dulce"
+
+#: ../admin/includes/meta_boxes.php:172
+msgid "Red Wine"
+msgstr "Vino Rojo"
+
+#: ../admin/includes/meta_boxes.php:176
+msgid "Full bodied"
+msgstr "De Cuerpo Completo"
+
+#: ../admin/includes/meta_boxes.php:180
+msgid "Medium bodied"
+msgstr "De Medio Cuerpo"
+
+#: ../admin/includes/meta_boxes.php:184
+msgid "Light bodied"
+msgstr "De Cuerpo Ligero"
+
+#: ../admin/includes/meta_boxes.php:189
+msgid "Misc."
+msgstr "Misc."
+
+#: ../admin/includes/meta_boxes.php:193
+msgid "New"
+msgstr "Nuevo"
+
+#: ../admin/includes/meta_boxes.php:198
+msgid "Chef's Special"
+msgstr "Especialidad del Chef"
+
+#: ../admin/includes/options/email_options.php:17 ../admin/views/admin.php:63
+msgid "Email Options"
+msgstr "Opciones del Email"
+
+#: ../admin/includes/options/email_options.php:24
+msgid "Change email from name"
+msgstr "Cambiar email del nombre"
+
+#: ../admin/includes/options/email_options.php:29
+msgid "If left blank, it will default to the site name."
+msgstr "Si se deja en blanco, pondrá por defecto el nombre del sitio."
+
+#: ../admin/includes/options/email_options.php:35
+msgid "Disable HTML emails"
+msgstr "Deshabilitar emails HTML"
+
+#: ../admin/includes/options/email_options.php:40
+msgid "Emails will still go out, but in plain text form."
+msgstr "Los emails aún saldrán, pero en forma de texto plano."
+
+#: ../admin/includes/options/email_options.php:46
+msgid "Disable emails to site admin"
+msgstr "Deshabilitar emails al sitio de admin"
+
+#: ../admin/includes/options/email_options.php:57
+msgid "Disable reservation emails to customer"
+msgstr "Deshabilitar emails de reservación al cliente"
+
+#: ../admin/includes/options/email_options.php:68
+msgid "The customer email. <br>"
+msgstr "El email del cliente. <br>"
+
+#: ../admin/includes/options/email_options.php:71
+msgid "These tags can be used in your emails."
+msgstr "Estas etiquetas pueden ser usadas en sus emails."
+
+#: ../admin/includes/options/email_options.php:102
+msgid "The admin email."
+msgstr "El email del admin."
+
+#: ../admin/includes/options/email_options.php:114
+msgid "The customer cancellation email."
+msgstr "El email de cancelación del cliente."
+
+#: ../admin/includes/options/email_options.php:126
+msgid "The admin cancellation email."
+msgstr "El email de cancelación del admin."
+
+#: ../admin/includes/options/email_options.php:137
+msgid "Cancellation shortcode location"
+msgstr "La posición del código corto de cancelación"
+
+#: ../admin/includes/options/email_options.php:262
+#: ../admin/includes/options/email_options.php:291
+#: ../admin/includes/options/email_options.php:324
+#: ../admin/includes/options/email_options.php:352
+#: ../admin/includes/options/general_options.php:313
+#: ../admin/includes/options/general_options.php:316
+msgid "To"
+msgstr "A"
+
+#: ../admin/includes/options/email_options.php:266
+#: ../admin/includes/options/email_options.php:295
+#: ../admin/includes/options/email_options.php:328
+#: ../admin/includes/options/email_options.php:356
+msgid "Cc"
+msgstr "Cc"
+
+#: ../admin/includes/options/email_options.php:270
+#: ../admin/includes/options/email_options.php:299
+#: ../admin/includes/options/email_options.php:332
+#: ../admin/includes/options/email_options.php:360
+msgid "Subject"
+msgstr "Asunto"
+
+#: ../admin/includes/options/email_options.php:274
+#: ../admin/includes/options/email_options.php:303
+#: ../admin/includes/options/email_options.php:336
+#: ../admin/includes/options/email_options.php:364
+msgid "Message"
+msgstr "Mensaje"
+
+#: ../admin/includes/options/email_options.php:308
+msgid "Available email tags"
+msgstr "Etiquetas de email disponibles"
+
+#: ../admin/includes/options/email_options.php:396
+msgid ""
+"Choose location of the [resrescancel] shortcode. This is used by the "
+"{cancel} tag."
+msgstr ""
+"Escoja la localización del código corto [resrescancel]. Esto es usado por la "
+"etiqueta {cancel}."
+
+#: ../admin/includes/options/form_options.php:14 ../admin/views/admin.php:62
+msgid "Reservation Form Options"
+msgstr "Opciones de la Forma de Reservación"
+
+#: ../admin/includes/options/form_options.php:22
+msgid "Max. Party Size"
+msgstr "Tamaño Máx. del Grupo"
+
+#: ../admin/includes/options/form_options.php:33
+msgid "Disable Themeroller styles"
+msgstr "Deshabilitar estilos de Themeroller "
+
+#: ../admin/includes/options/form_options.php:38
+msgid ""
+"<strong>NOTE:</strong> This will remove styles from the date & time pickers."
+"<br>Please only use this option if you plan to add your own styles."
+msgstr ""
+"<strong>NOTA:</strong> Esto borrará los estilos de los selectores de fecha y "
+"hora.<br> Por favor solo use esta opción si planea añadir sus propios "
+"estilos."
+
+#: ../admin/includes/options/form_options.php:44
+msgid "Select a Themeroller style for the form."
+msgstr "Seleccionar un estilo de Themeroller para la forma."
+
+#: ../admin/includes/options/form_options.php:56
+msgid "Modify reservation form fields"
+msgstr "Modificar campos de forma de reservación"
+
+#: ../admin/includes/options/form_options.php:68
+msgid "Restaurant Areas: <br> Enter one area name per line."
+msgstr "Áreas de Restaurante: <br> Entre un nombre de área por línea."
+
+#: ../admin/includes/options/form_options.php:73
+msgid "These will appear in a dropdown menu in the reservation form."
+msgstr "Esto aparecerá en un menú desplegable en la forma de reservación."
+
+#: ../admin/includes/options/form_options.php:82
+msgid "Captcha Options"
+msgstr "Opciones de Captcha"
+
+#: ../admin/includes/options/form_options.php:89
+msgid "Disable default captcha system?"
+msgstr "¿Deshabilitar sistema de captcha por defecto?"
+
+#: ../admin/includes/options/form_options.php:100
+msgid "Enable Google's reCAPTCHA system?"
+msgstr "¿Habilitar sistema de reCAPTCHA de Google?"
+
+#: ../admin/includes/options/form_options.php:111
+msgid "reCAPTCHA options"
+msgstr "Opciones de reCAPTCHA "
+
+#: ../admin/includes/options/form_options.php:122
+msgid "reCAPTCHA style"
+msgstr "Estilo de reCAPTCHA "
+
+#: ../admin/includes/options/form_options.php:136
+msgid "Mailing List Options"
+msgstr "Opciones de Lista de Envío de Mails"
+
+#: ../admin/includes/options/form_options.php:143
+#: ../admin/includes/options/form_options.php:436
+msgid "Enable MailChimp"
+msgstr "Habilitar MailChimp"
+
+#: ../admin/includes/options/form_options.php:300
+msgid "Ask for both first and last names."
+msgstr "Preguntar por el primer nombre y el apellido."
+
+#: ../admin/includes/options/form_options.php:305
+msgid "Disable the notes option (main reservation form and widgets)."
+msgstr ""
+"Deshabilitar la opción de notas (widgets y forma principal de reservación)."
+
+#: ../admin/includes/options/form_options.php:310
+msgid ""
+"Disable the Restaurant Areas option (main reservation form and widgets)."
+msgstr ""
+"Deshabilitar la opción Áreas de Restaurante (widgets y forma principal de "
+"reservación)."
+
+#: ../admin/includes/options/form_options.php:371
+msgid "Public Key"
+msgstr "Clave Pública"
+
+#: ../admin/includes/options/form_options.php:376
+msgid "Private Key"
+msgstr "Clave Privada"
+
+#: ../admin/includes/options/form_options.php:421
+msgid "Please Select"
+msgstr "Por favor Seleccione"
+
+#: ../admin/includes/options/form_options.php:442
+msgid "API Key"
+msgstr "Clave de API"
+
+#: ../admin/includes/options/form_options.php:447
+msgid "Select a list"
+msgstr "Seleccione una lista"
+
+#: ../admin/includes/options/form_options.php:459
+msgid ""
+"Disable Double Opt-in. The user will be automatically added to your list, "
+"without needing to confirm acceptance to the list. Use at your own risk!"
+msgstr ""
+"Deshabilitar Opt-in Doble. El usuario será automáticamente añadido a su "
+"lista, sin necesidad de confirmar la aceptación en la lista. ¡Úselo a riesgo "
+"propio!"
+
+#: ../admin/includes/options/form_options.php:465
+msgid ""
+"Enable User Opt-in. If this is <strong>enabled</strong>, the user will see "
+"an opt-in box to choose whether to sign up or not. Also they will still "
+"recieve a double opt-in email, unless the Disable Double Opt-in option is "
+"enabled as well."
+msgstr ""
+"Habilitar Opt-in de Usuario. Si está <strong>habilitado</strong>, el usuario "
+"verá una casilla de opt-in para escoger si inscribirse o no. También "
+"recibirá un email de double opt-in, a menos que la opción Deshabilitar Opt-"
+"in esté habilitada también."
+
+#: ../admin/includes/options/form_options.php:471
+msgid "Text for the User Opt-in option."
+msgstr "Texto para la opción Opt-in de Usuario."
+
+#: ../admin/includes/options/general_options.php:15
+#: ../admin/views/admin.php:61
+msgid "General Options"
+msgstr "Opciones Generales"
+
+#: ../admin/includes/options/general_options.php:22
+msgid "Shortcode & General Information"
+msgstr "Código Corto e Información General"
+
+#: ../admin/includes/options/general_options.php:33
+msgid "Restaurant information"
+msgstr "Información de Restaurante"
+
+#: ../admin/includes/options/general_options.php:44
+msgid "Days restaurant is open"
+msgstr "El restaurante de Días está abierto"
+
+#: ../admin/includes/options/general_options.php:56
+msgid ""
+"Override opening times: <br> Enter one date per line. Please use the Month-"
+"Date format, e.g. for 25th December use 12-25"
+msgstr ""
+"Sobrescribir tiempos de apertura: <br> Entre una fecha por línea. Por favor "
+"use el formato Mes-Día, ej. para 25 de Diciembre use 12-25"
+
+#: ../admin/includes/options/general_options.php:61
+msgid ""
+"Please do not use leading zeros. E.g. if the date you want to exclude is "
+"January the first, write it as 1-1, not 01-01"
+msgstr ""
+"Por favor no use ceros a la izquierda. Ej. si la fecha que desea excluir es "
+"el primero de Enero, escríbala como 1-1, no 01-01"
+
+#: ../admin/includes/options/general_options.php:67
+msgid "Max. capacity per hour"
+msgstr "Capacidad máxima por hora"
+
+#: ../admin/includes/options/general_options.php:72
+msgid ""
+"If set, it will block reservations if the capacity is reached for that hour. "
+"If left blank, it will count as unlimited reservations."
+msgstr ""
+"Si se establece, bloqueará las reservas si se alcanza la capacidad para esa "
+"hora. Si se deja en blanco, se contará como reservas ilimitadas."
+
+#: ../admin/includes/options/general_options.php:78
+msgid "Currency symbol"
+msgstr "Símbolo de moneda"
+
+#: ../admin/includes/options/general_options.php:83
+msgid "Default is $"
+msgstr "Por defecto es $"
+
+#: ../admin/includes/options/general_options.php:89
+msgid "Menu Style"
+msgstr "Estilo del Menú"
+
+#: ../admin/includes/options/general_options.php:100
+msgid "Template Colour Scheme"
+msgstr "Esquema de Color de la Plantilla"
+
+#: ../admin/includes/options/general_options.php:111
+msgid "Disable menu images"
+msgstr "Desactivar imágenes del menú"
+
+#: ../admin/includes/options/general_options.php:122
+msgid "Enable the allergen images in the menu."
+msgstr "Habilitar las imágenes de alérgenos en el menú."
+
+#: ../admin/includes/options/general_options.php:201
+msgid "<p>The following shortcodes can be used on pages or posts</p>"
+msgstr ""
+"<p>Los siguientes códigos cortos se pueden utilizar en las páginas o posts</"
+"p>"
+
+#: ../admin/includes/options/general_options.php:202
+msgid "<p>[resres] - displays the reservations form</p>"
+msgstr "<p>[resres] - muestra el formulario de reservas</p>"
+
+#: ../admin/includes/options/general_options.php:203
+msgid "<p>[resresmenu] - displays the menu</p>"
+msgstr "<p>[resresmenu] - muestra el menú</p>"
+
+#: ../admin/includes/options/general_options.php:204
+msgid "<p>[resrescancel] - displays the cancel reservation form</p>"
+msgstr ""
+"<p>[resrescancel] - muestra el formulario de cancelar la reservación</p>"
+
+#: ../admin/includes/options/general_options.php:205
+msgid "<p>[resrestimes] - displays the opening times and location details</p>"
+msgstr ""
+"<p>[resrestimes] - muestra los horarios de apertura y detalles de la "
+"ubicación</p>"
+
+#: ../admin/includes/options/general_options.php:206
+msgid ""
+"<p><strong>Please see the <a href=\"http://www.deftdev.com/document/resres-"
+"documentation/\">documentation</a> for further information regarding the "
+"shortcodes.</strong></p>"
+msgstr ""
+"<p><strong>Por favor, consulte la <a href=\"http://www.deftdev.com/document/"
+"resres-documentation/\">documentación</a> para más información con respecto "
+"a los códigos cortos.</strong></p>"
+
+#: ../admin/includes/options/general_options.php:231
+msgid "Restaurant name"
+msgstr "Nombre del restaurante"
+
+#: ../admin/includes/options/general_options.php:236
+#: ../public/includes/address_and_opening_times.php:174
+msgid "Address"
+msgstr "Dirección"
+
+#: ../admin/includes/options/general_options.php:241
+msgid "Address line 2"
+msgstr "2da línea de dirección"
+
+#: ../admin/includes/options/general_options.php:246
+msgid "City"
+msgstr "Ciudad"
+
+#: ../admin/includes/options/general_options.php:251
+msgid "State/Region"
+msgstr "Estado/Región"
+
+#: ../admin/includes/options/general_options.php:256
+msgid "Country"
+msgstr "País"
+
+#: ../admin/includes/options/general_options.php:261
+msgid "Zip/Postal Code"
+msgstr "Zip/Código Postal"
+
+#: ../admin/includes/options/general_options.php:266
+msgid "Telephone"
+msgstr "Teléfono"
+
+#: ../admin/includes/options/general_options.php:271
+#: ../public/includes/address_and_opening_times.php:212
+msgid "Fax"
+msgstr "Fax"
+
+#: ../admin/includes/options/general_options.php:276
+msgid "E-mail"
+msgstr "E-mail"
+
+#: ../admin/includes/options/general_options.php:281
+msgid "Facebook (url)"
+msgstr "Facebook (url)"
+
+#: ../admin/includes/options/general_options.php:286
+msgid "Twitter (handle)"
+msgstr "Twitter (cuenta)"
+
+#: ../admin/includes/options/general_options.php:291
+msgid "Google Plus (user code)"
+msgstr "Google Plus (código de usuario)"
+
+#: ../admin/includes/options/general_options.php:311
+msgid "Open?"
+msgstr "¿Abrir?"
+
+#: ../admin/includes/options/general_options.php:312
+msgid "First sitting from"
+msgstr "Primera posición desde"
+
+#: ../admin/includes/options/general_options.php:315
+msgid "Second sitting from"
+msgstr "Segunda posición desde"
+
+#: ../admin/includes/options/general_options.php:322
+msgid "Mon"
+msgstr "Lun"
+
+#: ../admin/includes/options/general_options.php:336
+msgid "Tue"
+msgstr "Mar"
+
+#: ../admin/includes/options/general_options.php:347
+msgid "Wed"
+msgstr "Mie"
+
+#: ../admin/includes/options/general_options.php:358
+msgid "Thu"
+msgstr "Jue"
+
+#: ../admin/includes/options/general_options.php:369
+msgid "Fri"
+msgstr "Vie"
+
+#: ../admin/includes/options/general_options.php:380
+msgid "Sat"
+msgstr "Sab"
+
+#: ../admin/includes/options/general_options.php:391
+msgid "Sun"
+msgstr "Dom"
+
+#: ../admin/includes/options/general_options.php:458
+msgid "Column"
+msgstr "Columna"
+
+#: ../admin/includes/options/general_options.php:459
+msgid "Accordion"
+msgstr "Acordeón"
+
+#: ../admin/includes/options/general_options.php:460
+msgid "Accordion Column"
+msgstr "Columna de Acordeón"
+
+#: ../admin/includes/options/general_options.php:461
+msgid "List"
+msgstr "Lista"
+
+#: ../admin/includes/options/general_options.php:462
+msgid "Grid"
+msgstr "Cuadrícula"
+
+#: ../admin/includes/options/general_options.php:463
+msgid "Chalkboard"
+msgstr "Pizarra"
+
+#: ../admin/includes/options/general_options.php:464
+msgid "Simple"
+msgstr "Simple"
+
+#: ../admin/includes/options/general_options.php:484
+msgid "Title background colour"
+msgstr "Color del fondo del título"
+
+#: ../admin/includes/options/general_options.php:489
+msgid "Title font colour"
+msgstr "Color de la fuente del título"
+
+#: ../admin/includes/options/general_options.php:514
+msgid "Enable images"
+msgstr "Habilitar imágenes"
+
+#: ../admin/includes/options/general_options.php:519
+msgid "Use white images"
+msgstr "Usar imágenes blancas"
+
+#: ../admin/includes/options/licence.php:14 ../admin/views/admin.php:65
+msgid "Licence"
+msgstr "Licencia"
+
+#: ../admin/includes/options/licence.php:55
+#: ../admin/includes/options/licence.php:58
+msgid "invalid"
+msgstr "inválida"
+
+#: ../admin/includes/options/licence.php:56
+msgid "expired"
+msgstr "expirada"
+
+#: ../admin/includes/options/licence.php:57
+msgid "deactivated"
+msgstr "desactivada"
+
+#: ../admin/includes/options/licence.php:59
+msgid "valid"
+msgstr "válida"
+
+#: ../admin/includes/options/licence.php:77
+msgid "The licence key is "
+msgstr "La clave de licencia es"
+
+#: ../admin/includes/options/licence.php:80
+msgid "The licence key is valid"
+msgstr "La clave de licencia es válida"
+
+#: ../admin/includes/options/licence.php:91
+msgid "Enter your licence key"
+msgstr "Introduzca su clave de licencia"
+
+#: ../admin/includes/options/licence.php:100
+msgid "Deactivate License"
+msgstr "Desactivar Licencia"
+
+#: ../admin/includes/options/licence.php:103
+msgid "Activate License"
+msgstr "Licencia de Activación"
+
+#: ../admin/includes/options/menu_ordering_options.php:15
+#: ../admin/views/admin.php:64
+msgid "Menu Ordering"
+msgstr "Menú de pedido"
+
+#: ../admin/includes/options/menu_ordering_options.php:24
+msgid "Order the menu sections"
+msgstr "Ordenar las secciones del menú"
+
+#: ../admin/includes/options/menu_ordering_options.php:39
+msgid "Order the dishes"
+msgstr "Ordenar los platos"
+
+#: ../admin/includes/options/menu_ordering_options.php:91
+#: ../admin/includes/options/menu_ordering_options.php:105
+msgid "Drag & drop to re-order"
+msgstr "Arrastrar y Soltar para reordenar"
+
+#: ../admin/includes/options/menu_ordering_options.php:107
+msgid "Dishes can only be re-ordered within their section."
+msgstr "Los platos solo pueden ser reordenados dentro de su sección."
+
+#: ../admin/includes/options/menu_ordering_options.php:127
+msgid "Please allocate a dish to a section."
+msgstr "Por favor coloque un plato en una sección."
+
+#: ../admin/views/admin.php:34
+msgid ""
+"WARNING: JavaScript is DISABLED. ResRes requires JavaScript to be enabled in "
+"the admin to function correctly."
+msgstr ""
+"ADVERTENCIA: JavaScript no está habilitado. y ResRes requiere que JavaScript "
+"esté habilitado para funcionar correctamente."
+
+#: ../admin/views/admin.php:121
+msgid "Save Changes"
+msgstr "Guardar Cambios"
+
+#: ../admin/views/menus.php:39
+msgid "New Section"
+msgstr "Nueva Sección"
+
+#: ../admin/views/menus.php:43
+msgid "Load Section"
+msgstr "Cargar Sección"
+
+#: ../admin/views/menus.php:45
+msgid "Select a Section"
+msgstr "Seleccione una Sección"
+
+#: ../admin/views/menus.php:51
+msgid "Save Section"
+msgstr "Salvar Sección"
+
+#: ../admin/views/menus.php:52
+msgid "Please enter a name for this section."
+msgstr "Por favor, introduzca un nombre para esta sección."
+
+#: ../admin/views/reservations.php:34
+msgid "Today"
+msgstr "Hoy"
+
+#: ../admin/views/reservations.php:35
+msgid "Tomorrow"
+msgstr "Mañana"
+
+#: ../admin/views/reservations.php:36
+msgid "This week"
+msgstr "Esta semana"
+
+#: ../admin/views/reservations.php:37
+msgid "This month"
+msgstr "Este mes"
+
+#: ../admin/views/reservations.php:38
+msgid "Select first date"
+msgstr "Seleccione la primera fecha"
+
+#: ../admin/views/reservations.php:39
+msgid "Select second date"
+msgstr "Seleccione la segunda fecha"
+
+#: ../admin/views/reservations.php:43
+msgid "Load"
+msgstr "Cargar"
+
+#: ../admin/views/reservations.php:45
+msgid "Click for help with date selections"
+msgstr "Haga clic para obtener ayuda con las fechas seleccionadas"
+
+#: ../admin/views/reservations.php:51
+msgid "Print"
+msgstr "Imprimir"
+
+#: ../admin/views/reservations.php:52
+msgid "Hide arrived customers"
+msgstr "Ocultar clientes que llegaron"
+
+#: ../admin/views/reservations.php:53
+msgid "Hide cancelled customers"
+msgstr "Ocultar clientes cancelados"
+
+#: ../admin/views/reservations.php:55
+msgid "Add Reservation"
+msgstr "Adicionar Reservación"
+
+#: ../admin/views/reservations.php:59
+msgid "Date Selection Help"
+msgstr "Ayuda de la Selección de Fecha "
+
+#: ../admin/views/reservations.php:61
+msgid "Today: Will list all reservations made for today"
+msgstr "Hoy: Aparecerá una lista de todas las reservas realizadas para hoy"
+
+#: ../admin/views/reservations.php:62
+msgid "Tomorrow: Will list all reservations made for tomorrow."
+msgstr ""
+"Mañana: Aparecerá una lista de todas las reservas realizadas para el mañana."
+
+#: ../admin/views/reservations.php:63
+msgid "This week: Will display all reservations this week (Monday to Sunday)."
+msgstr ""
+"Esta semana: Mostrará todas las reservas de esta semana (de Lunes a Domingo)."
+
+#: ../admin/views/reservations.php:64
+msgid "This month: Will display all reservations this month."
+msgstr "Este mes: Mostrará todas las reservas de este mes."
+
+#: ../admin/views/reservations.php:65
+msgid ""
+"Date Selectors: Choosing both dates will select all reservations within "
+"those dates (inclusive of the selected dates). Select the same date in both "
+"fields to find a single future date. Select just the first date to find "
+"reservations from that date onwards. Select just the second date to find "
+"reservations up to and including that date."
+msgstr ""
+"Selectores de Fecha: La elección de ambas fechas dará como resultado todas "
+"las reservas dentro de esas fechas (incluyendo las fechas seleccionadas). "
+"Seleccione la misma fecha en ambos campos para encontrar una sola fecha "
+"futura. Seleccione sólo la primera fecha para encontrar reservas de esa "
+"fecha en adelante. Seleccione sólo la segunda fecha para encontrar reservas "
+"hasta esa fecha incluyéndola."
+
+#: ../admin/views/reservations.php:82 ../admin/views/reservations.php:204
+#: ../public/class-resres.php:1866 ../public/class-resres.php:2355
+msgid "Date"
+msgstr "Fecha"
+
+#: ../admin/views/reservations.php:85 ../admin/views/reservations.php:206
+#: ../public/class-resres.php:2356
+msgid "Time"
+msgstr "Tiempo"
+
+#: ../admin/views/reservations.php:88 ../admin/views/reservations.php:201
+#: ../public/class-resres.php:2357
+msgid "Party Size"
+msgstr "Tamaño del Grupo"
+
+#: ../admin/views/reservations.php:100 ../admin/views/reservations.php:197
+#: ../public/class-resres.php:1863 ../public/class-resres.php:2350
+#: ../public/includes/item_cpt.php:97
+msgid "Name"
+msgstr "Nombre"
+
+#: ../admin/views/reservations.php:105 ../public/class-resres.php:1864
+#: ../public/class-resres.php:2351
+msgid "First Name"
+msgstr "Primer Nombre"
+
+#: ../admin/views/reservations.php:108 ../public/class-resres.php:1865
+#: ../public/class-resres.php:2352
+msgid "Last Name"
+msgstr "Apellido"
+
+#: ../admin/views/reservations.php:116
+msgid "Phone number"
+msgstr "Número de Teléfono"
+
+#: ../admin/views/reservations.php:119 ../admin/views/reservations.php:199
+#: ../public/class-resres.php:2354
+#: ../public/includes/address_and_opening_times.php:218
+msgid "Email"
+msgstr "Email"
+
+#: ../admin/views/reservations.php:135
+msgid "Dining Area"
+msgstr "Zona de Comedor"
+
+#: ../admin/views/reservations.php:148 ../admin/views/reservations.php:200
+#: ../public/class-resres.php:2358
+msgid "Notes"
+msgstr "Notas"
+
+#: ../admin/views/reservations.php:155
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: ../admin/views/reservations.php:158
+msgid "RESERVE"
+msgstr "RESERVAR"
+
+#: ../admin/views/reservations.php:162
+msgid "Customer email"
+msgstr "Email del cliente"
+
+#: ../admin/views/reservations.php:166
+msgid "Admin email"
+msgstr "Email del administrador"
+
+#: ../admin/views/reservations.php:179
+msgid "Currently displaying:"
+msgstr "Mostrando actualmente:"
+
+#: ../admin/views/reservations.php:198
+#: ../public/includes/address_and_opening_times.php:206
+msgid "Phone"
+msgstr "Teléfono"
+
+#: ../admin/views/reservations.php:202
+msgid "Area"
+msgstr "Área"
+
+#: ../admin/views/reservations.php:207
+msgid "Arrived"
+msgstr "Llegada"
+
+#: ../admin/views/reservations.php:208
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#: ../public/class-resres.php:840 ../public/class-resres.php:2044
+msgid ""
+"<div class=\"res_clearmargin\"><p class=\"resres_error_message\">Sorry, the "
+"restuarant is fully booked for that time. Please choose another time and "
+"resubmit the form.</p></div>"
+msgstr ""
+"<div class=\"res_clearmargin\"><p class=\"resres_error_message\">Lo "
+"sentimos, el restaurante está completamente lleno para esa fecha. Por favor "
+"elija otra vez y vuelva a enviar el formulario.</p></div>"
+
+#: ../public/class-resres.php:851 ../public/class-resres.php:2050
+msgid ""
+"<div class=\"res_clearmargin\"><p class=\"resres_error_message\">The captcha "
+"was not entered correctly. Please try it again.</p></div>"
+msgstr ""
+"<div class=\"res_clearmargin\"><p class=\"resres_error_message\">El Código "
+"de seguridad no se ha introducido correctamente. Por favor, inténtelo de "
+"nuevo.</p></div>"
+
+#: ../public/class-resres.php:877 ../public/class-resres.php:2069
+msgid ""
+"<div class=\"res_clearmargin\"><p class=\"resres_error_message\">The "
+"reCAPTCHA was not entered correctly. Please try it again.</p></div>"
+msgstr ""
+"<div class=\"res_clearmargin\"><p class=\"resres_error_message\">El "
+"reCAPTCHA no se ha introducido correctamente. Por favor, inténtelo de nuevo."
+"</p></div>"
+
+#: ../public/class-resres.php:1431
+msgid "Reservation not found. Please check the ID and try again."
+msgstr ""
+"No se ha encontrado la reserva. Por favor, compruebe el ID y vuelva a "
+"intentarlo."
+
+#: ../public/class-resres.php:1434
+msgid "Reservation cancelled."
+msgstr "Reservación Cancelada"
+
+#: ../public/class-resres.php:1662 ../public/class-resres.php:1665
+#: ../public/class-resres.php:1720 ../public/class-resres.php:1721
+#: ../public/class-resres.php:1748 ../public/class-resres.php:1749
+msgid " "
+msgstr ""
+
+#: ../public/class-resres.php:1693
+msgid "Spicy hot!"
+msgstr "¡Picante caliente!"
+
+#: ../public/class-resres.php:1853
+msgid "Please select"
+msgstr "Por favor seleccione"
+
+#: ../public/class-resres.php:1857 ../public/class-resres.php:2342
+msgid "Reserve a Table"
+msgstr "Reservar una Mesa"
+
+#: ../public/class-resres.php:1858 ../public/class-resres.php:2343
+msgid "Reserve"
+msgstr "Reservar"
+
+#: ../public/class-resres.php:1871 ../public/class-resres.php:2364
+msgid "Title:"
+msgstr "Título:"
+
+#: ../public/class-resres.php:1877 ../public/class-resres.php:2370
+msgid "Ask for both first and last names?"
+msgstr "¿Preguntar por los dos nombres y apellidos?"
+
+#: ../public/class-resres.php:1881 ../public/class-resres.php:2374
+msgid "Button Text:"
+msgstr "Texto del Botón:"
+
+#: ../public/class-resres.php:1886
+msgid "Reservation form location:"
+msgstr "Ubicación del formulario de reservación:"
+
+#: ../public/class-resres.php:1890 ../public/class-resres.php:2391
+msgid "Labels"
+msgstr "Etiquetas"
+
+#: ../public/class-resres.php:1893 ../public/class-resres.php:2394
+msgid "Name Label:"
+msgstr "Etiqueta del Nombre:"
+
+#: ../public/class-resres.php:1898 ../public/class-resres.php:2399
+msgid "First Name Label:"
+msgstr "Etiqueta del Primer Nombre:"
+
+#: ../public/class-resres.php:1903 ../public/class-resres.php:2404
+msgid "Surname Label:"
+msgstr "Etiqueta del Nombre Intermedio:"
+
+#: ../public/class-resres.php:1908 ../public/class-resres.php:2419
+msgid "Date Label:"
+msgstr "Etiqueta de la Fecha:"
+
+#: ../public/class-resres.php:2083
+msgid ""
+"<div class=\"res_clearmargin\"><p class=\"resres_success_message\">Your "
+"reservation has been submitted.</p></div>"
+msgstr ""
+"<div class=\"res_clearmargin\"><p class=\"resres_success_message\">Su "
+"reserva ha sido presentada.</p></div>"
+
+#: ../public/class-resres.php:2273 ../public/views/public.php:114
+msgid "Please confirm you are human, what is "
+msgstr "Por favor confirme que es humano, que es"
+
+#: ../public/class-resres.php:2353
+msgid "Phone Number"
+msgstr "Número de Teléfono"
+
+#: ../public/class-resres.php:2359
+msgid "Choose an area to dine in."
+msgstr "Elija un área donde comer."
+
+#: ../public/class-resres.php:2409
+msgid "Phone Label:"
+msgstr "Etiqueta del Teléfono:"
+
+#: ../public/class-resres.php:2414
+msgid "Email Label:"
+msgstr "Etiqueta del Email:"
+
+#: ../public/class-resres.php:2424
+msgid "Time Label:"
+msgstr "Etiqueta del Tiempo:"
+
+#: ../public/class-resres.php:2429
+msgid "Party Size Label:"
+msgstr "Etiqueta del Tamaño del Grupo:"
+
+#: ../public/class-resres.php:2434
+msgid "Dining Section Label:"
+msgstr "Etiqueta de la Sección del Comedor:"
+
+#: ../public/class-resres.php:2439
+msgid "Notes Label:"
+msgstr "Etiqueta de las Notas:"
+
+#: ../public/includes/address_and_opening_times.php:74
+#: ../public/includes/address_and_opening_times.php:78
+#: ../public/includes/address_and_opening_times.php:83
+#: ../public/includes/address_and_opening_times.php:86
+#: ../public/includes/address_and_opening_times.php:89
+#: ../public/includes/address_and_opening_times.php:92
+#: ../public/includes/address_and_opening_times.php:95
+#: ../public/includes/address_and_opening_times.php:98
+#: ../public/includes/address_and_opening_times.php:121
+#: ../public/includes/address_and_opening_times.php:125
+#: ../public/includes/address_and_opening_times.php:129
+#: ../public/includes/address_and_opening_times.php:133
+#: ../public/includes/address_and_opening_times.php:137
+#: ../public/includes/address_and_opening_times.php:141
+#: ../public/includes/address_and_opening_times.php:145
+msgid "Closed"
+msgstr "Cerrado"
+
+#: ../public/includes/address_and_opening_times.php:160
+msgid "Contact Us"
+msgstr "Contáctenos"
+
+#: ../public/includes/address_and_opening_times.php:237
+msgid "Opening Times"
+msgstr "Horario"
+
+#: ../public/includes/address_and_opening_times.php:254
+msgid "Sitting One"
+msgstr "Asiento Uno"
+
+#: ../public/includes/address_and_opening_times.php:255
+msgid "Sitting Two"
+msgstr "Asiento Dos"
+
+#: ../public/includes/address_and_opening_times.php:261
+msgid "Monday: "
+msgstr "Lunes:"
+
+#: ../public/includes/address_and_opening_times.php:266
+msgid "Tuesday: "
+msgstr "Martes:"
+
+#: ../public/includes/address_and_opening_times.php:271
+msgid "Wednesday: "
+msgstr "Miércoles:"
+
+#: ../public/includes/address_and_opening_times.php:276
+msgid "Thursday: "
+msgstr "Jueves:"
+
+#: ../public/includes/address_and_opening_times.php:281
+msgid "Friday: "
+msgstr "Viernes:"
+
+#: ../public/includes/address_and_opening_times.php:286
+msgid "Saturday: "
+msgstr "Sábado:"
+
+#: ../public/includes/address_and_opening_times.php:291
+msgid "Sunday: "
+msgstr "Domingo:"
+
+#: ../public/includes/item_cpt.php:6 ../public/includes/item_cpt.php:17
+msgid "Dishes"
+msgstr "Platos"
+
+#: ../public/includes/item_cpt.php:7
+msgid "Dish"
+msgstr "Plato"
+
+#: ../public/includes/item_cpt.php:8
+msgid "Add New"
+msgstr "Adicionar Nuevo"
+
+#: ../public/includes/item_cpt.php:10
+msgid "Edit Dish"
+msgstr "Modificar Plato"
+
+#: ../public/includes/item_cpt.php:11
+msgid "New Dish"
+msgstr "Nuevo Plato"
+
+#: ../public/includes/item_cpt.php:12
+msgid "View Dish"
+msgstr "Ver Plato"
+
+#: ../public/includes/item_cpt.php:13
+msgid "Search Dishes"
+msgstr "Buscar Platos"
+
+#: ../public/includes/item_cpt.php:14
+msgid "No dishes found"
+msgstr "No se encontraron platos"
+
+#: ../public/includes/item_cpt.php:15
+msgid "No dishes found in Trash"
+msgstr "No se han encontrado platos en la papelera"
+
+#: ../public/includes/item_cpt.php:16
+msgid "Parent Dish:"
+msgstr "Plato Padre:"
+
+#: ../public/includes/item_cpt.php:58
+msgid "Menu Section"
+msgstr "Sección del Menú"
+
+#: ../public/includes/item_cpt.php:59
+msgid "Search Menu Sections"
+msgstr "Buscar Secciones del Menú"
+
+#: ../public/includes/item_cpt.php:61
+msgid "All Menu Sections"
+msgstr "Todas las Secciones del Menú"
+
+#: ../public/includes/item_cpt.php:64
+msgid "Edit Menu Section"
+msgstr "Modificar Sección del Menú"
+
+#: ../public/includes/item_cpt.php:65
+msgid "Update Menu Section"
+msgstr "Actualizar Sección del Menú"
+
+#: ../public/includes/item_cpt.php:66
+msgid "Add New Menu Section"
+msgstr "Añadir Nueva Sección al Menú"
+
+#: ../public/includes/item_cpt.php:67
+msgid "New Menu Section"
+msgstr "Nueva sección del Menú"
+
+#: ../public/includes/item_cpt.php:68
+msgid "Separate menu sections with commas"
+msgstr "Secciones del menú con comas"
+
+#: ../public/includes/item_cpt.php:69
+msgid "Add or remove menu sections"
+msgstr "Adicionar o eliminar secciones con comas"
+
+#: ../public/includes/item_cpt.php:70
+msgid "Choose from the most used menu sections"
+msgstr "Elija una de las secciones del menú más utilizadas"
+
+#: ../public/includes/item_cpt.php:98
+msgid "Description"
+msgstr "Descripción"
+
+#: ../public/includes/item_cpt.php:99
+msgid "Slug"
+msgstr "Ficha"
+
+#: ../public/includes/item_cpt.php:101
+msgid "Posts"
+msgstr "Posts"
+
+#: ../public/includes/item_cpt.php:176
+msgid "Dish name"
+msgstr "Nombre del plato"
+
+#: ../public/includes/item_cpt.php:190
+msgid "Photo of Dish"
+msgstr "Foto del Plato"
+
+#: ../public/includes/item_cpt.php:194
+msgid "Short Description"
+msgstr "Descripción Corta"
+
+#: ../public/includes/item_cpt.php:218
+msgid "IMPORTANT: You can change the order of the Menu Sections from the"
+msgstr ""
+"IMPORTANTE: Es posible cambiar el orden de las secciones del menú de la"
+
+#: ../public/includes/item_cpt.php:218
+msgid "Settings page"
+msgstr "Página de configuraciones"
+
+#: ../public/templates/accordion-column/accordion-column.php:17
+#: ../public/templates/accordion/accordion.php:13
+#: ../public/templates/chalkboard/chalkboard.php:13
+#: ../public/templates/column/column.php:17
+#: ../public/templates/grid/grid.php:14 ../public/templates/list/list.php:14
+#: ../public/templates/simple/simple.php:14
+msgid "Nothing here right now..."
+msgstr "Nada aquí ahora mismo..."
+
+#: ../public/views/cancel.php:7
+msgid "Enter your reservation ID to cancel."
+msgstr "Introduzca el ID de la reservación a cancelar."
+
+#: ../public/views/cancel.php:10
+msgid "Cancel Reservation"
+msgstr "Cancelar Reservación"
+
+#: ../public/views/public.php:56
+msgid "Date *"
+msgstr "Fecha *"
+
+#: ../public/views/public.php:59
+msgid "Time *"
+msgstr "Tiempo *"
+
+#: ../public/views/public.php:61
+msgid "Party Size - slide to set, or type a number in the box."
+msgstr ""
+"Tamaño de Grupo - mover para establecer, o escribir un número en el cuadro."
+
+#: ../public/views/public.php:73
+msgid "Name *"
+msgstr "Nombre *"
+
+#: ../public/views/public.php:75
+msgid "First Name *"
+msgstr "Segundo Nombre *"
+
+#: ../public/views/public.php:76
+msgid "Last Name *"
+msgstr "Apellido *"
+
+#: ../public/views/public.php:79
+msgid "Phone number *"
+msgstr "Número de Teléfono *"
+
+#: ../public/views/public.php:81
+msgid "Email *"
+msgstr "Email *"
+
+#: ../public/views/public.php:97
+msgid "Please choose which area to dine in."
+msgstr "Por favor elija el área para cenar"
+
+#: ../public/views/public.php:108
+msgid "Notes - please let us know about any special needs, birthdays, etc."
+msgstr ""
+"Notas - por favor háganos saber acerca de las necesidades especiales, "
+"cumpleaños, etc."
+
+#: ../public/views/public.php:144
+msgid "Reserve Table"
+msgstr "Reservar Mesa"
