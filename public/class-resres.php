@@ -28,7 +28,7 @@ class ResRes {
 	 *
 	 * @var     string
 	 */
-	const VERSION = '1.0.7.f';
+	const VERSION = '1.0.8.f';
 
 	/**
 	 * Database version
@@ -266,7 +266,7 @@ class ResRes {
 		);
 	$resres_default_form = array(
 			'party_size'								=>	'25',
-			'enable_recpatcha'							=> 	'1',
+			'enable_recpatcha'							=> 	'0',
 			'themeroller_select'						=>	'Smoothness'
 
 		);
@@ -628,6 +628,7 @@ if( isset( $options['resres_day_of_week_sun_to_two']) && $options['resres_day_of
     $overrides = explode("\n", $dis_dates);
     $overrides = array_filter($overrides);
 
+$recaptcha_style = "smoothness";
 
 		wp_localize_script('resres-anytime', 'resres_time_vars', array(
 			'open_monday'			=>	isset( $options['resres_day_of_week_mon'] ),

@@ -109,8 +109,8 @@ class ResRes_Admin {
 		add_action('delete_menu_sections', array($this, 'resres_deleted_menu_section_term' ) );
 
 		//summer sales July 2014
-		add_action('admin_notices', array( $this, 'resres_summer_2014') );
-		add_action('wp_ajax_resres_summer_2014_dismiss', array( $this, 'resres_summer_2014_dismiss') );
+		//add_action('admin_notices', array( $this, 'resres_summer_2014') );
+		//add_action('wp_ajax_resres_summer_2014_dismiss', array( $this, 'resres_summer_2014_dismiss') );
 
 	}
 
@@ -755,8 +755,6 @@ if( false == get_option( 'resres_options' ) ) {
 
 
 
-
-
 	add_settings_field(
 		'resres_time',                      // ID used to identify the field throughout the theme
 		'',                           // The label to the left of the option interface element
@@ -1023,6 +1021,8 @@ public function resres_overrides_callback($args) {
 
     $options = get_option('resres_options');
 
+    if( !isset($options['resres_overrides']) ) { $options['resres_overrides'] = ''; }
+     
     $html = '<textarea cols="25" rows="10" id="resres_overrides" name="resres_options[resres_overrides]">' . $options['resres_overrides'] . '</textarea>';
     $html .= '<label for="show_content" style="vertical-align:top"> '  . $args[0] . '</label>';
 
@@ -1136,7 +1136,16 @@ public function resres_initialise_form_options() {
 	    )
 	);
 
-
+	add_settings_field(
+	    'disable_resres_captcha',
+	    __('Disable default captcha system?'),
+	    array($this, 'resres_regform_disable_resres_captcha_callback'),
+	    'resres_form_options',
+	    'resres_form_options_section',
+	    array(
+	        ''
+	    )
+	);
 
 	add_settings_field(
 		'resres_free',                      // ID used to identify the field throughout the theme
@@ -1150,6 +1159,10 @@ public function resres_initialise_form_options() {
 	);
 
 
+
+
+
+
 	register_setting(
 	    'resres_form_options',
 	    'resres_form_options'
@@ -1159,12 +1172,13 @@ public function resres_initialise_form_options() {
 	    'resres_form_options',
 	    'resres_form_options'
 	);
+
+	register_setting(
+	    'resres_form_options',
+	    'resres_form_options'
+	);
+
 /*
-	register_setting(
-	    'resres_form_options',
-	    'resres_form_options'
-	);
-
 	register_setting(
 	    'resres_form_options',
 	    'resres_form_options'
@@ -1195,6 +1209,19 @@ public function resres_regform_partysize_callback($args) {
     $options = get_option('resres_form_options');
 
     $html = '<input type="text" id="party_size" name="resres_form_options[party_size]" value="' . $options['party_size'] . '" />';
+    $html .= '<label for="show_content"> '  . $args[0] . '</label>';
+
+    echo $html;
+
+}
+
+
+public function resres_regform_disable_resres_captcha_callback($args) {
+
+    $options = get_option('resres_form_options');
+
+    $html = '<input type="checkbox" id="disable_resres_captcha" name="resres_form_options[disable_resres_captcha]" value="1" ' . checked(1, isset( $options['disable_resres_captcha'] ), false) . '/>';
+
     $html .= '<label for="show_content"> '  . $args[0] . '</label>';
 
     echo $html;
@@ -1262,20 +1289,6 @@ public function resres_regform_themeroller_styles_callback($args) {
     echo $html;
 
 }
-
-
-public function resres_regform_disable_resres_captcha_callback($args) {
-
-    $options = get_option('resres_form_options');
-
-    $html = '<input type="checkbox" id="disable_resres_captcha" name="resres_form_options[disable_resres_captcha]" value="1" ' . checked(1, isset( $options['disable_resres_captcha'] ), false) . '/>';
-
-    $html .= '<label for="show_content"> '  . $args[0] . '</label>';
-
-    echo $html;
-
-}
-
 
 public function resres_regform_enable_recaptcha_callback($args) {
 

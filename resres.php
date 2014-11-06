@@ -1,9 +1,5 @@
 <?php
 /**
- * The WordPress Plugin Boilerplate.
- *
- * A foundation off of which to build well-documented WordPress plugins that
- * also follow WordPress Coding Standards and PHP best practices.
  *
  * @package   ResRes Light
  * @author    Dean Robinson <team@deftdev.com>
@@ -14,8 +10,8 @@
  * @wordpress-plugin
  * Plugin Name:       ResRes Light
  * Plugin URI:        http://www.deftdev.com
- * Description:       A Light version of the the powerful restuarant reservation system, ResRes.
- * Version:           1.0.6.f
+ * Description:       A Light version of the powerful restuarant reservation system, ResRes.
+ * Version:           1.0.8.f
  * Author:            Dean Robinson
  * Author URI:        http://www.deftdev.com
  * Text Domain:       resres
@@ -50,22 +46,6 @@ add_action( 'plugins_loaded', array( 'ResRes', 'get_instance' ) );
  * Dashboard and Administrative Functionality
  *----------------------------------------------------------------------------*/
 
-/*
- * @TODO:
- *
- * - replace `class-resres-admin.php` with the name of the plugin's admin file
- * - replace ResRes_Admin with the name of the class defined in
- *   `class-resres-admin.php`
- *
- * If you want to include Ajax within the dashboard, change the following
- * conditional to:
- *
- * if ( is_admin() ) {
- *   ...
- * }
- *
- * The code below is intended to to give the lightest footprint possible.
- */
 if ( is_admin()) {
 
 	require_once( plugin_dir_path( __FILE__ ) . 'admin/class-resres-admin.php' );
