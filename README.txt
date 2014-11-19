@@ -20,7 +20,6 @@ ResRes is a fully featured restaurant reservation and menu system. Create custom
 * Easily add a reservation form to your WordPress site via a shortcode.
 * The form will automatically block out days and times your restaurant is closed to stop people from booking the wrong times.
 * Set certain weekdays as closed on the calendar and also set specific days (such as Christmas day) closed as well.
-* A capacity system, allows you to limit the number of bookings per hour.
 * Customisable customer and admin emails.
 * Built in tags to easily add info to emails such as reservation date, party size, etc.
 * Opening times & location shortcode.
@@ -45,6 +44,7 @@ ResRes is a fully featured restaurant reservation and menu system. Create custom
 * Easily assign allergen information or wine type (dry, full bodied, etc) to a dish in text or icon form. 
 * Easily add chili icons to denote spicy heat! 
 * MailChimp integration.
+* A capacity system, allows you to limit the number of bookings per hour.
 
 ####Support
 
