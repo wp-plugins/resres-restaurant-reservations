@@ -125,7 +125,7 @@ $('.hasPicker').datepicker({
 	le_time_picker();
 
 	} //end onselect function
-}).attr('readonly', true);
+});
 
 
 

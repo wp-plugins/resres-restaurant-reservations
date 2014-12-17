@@ -4,7 +4,7 @@ Donate link: http://deftdev.com/
 Tags: restaurant, reservation, booking, menu, 
 Requires at least: 3.7.1
 Tested up to: 4.0
-Stable tag: 1.0.8.f
+Stable tag: 1.0.9.f
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -108,6 +108,9 @@ It will email you. With the **[PRO](http://deftdev.com/downloads/resres "deftDEV
 3. Opening times and location
 4. One of the settings pages
 == Changelog ==
+
+= 1.0.9.f =
+* FIX: Reverted having the datepicker field as readonly.
 
 = 1.0.8.f =
 * FEATURE: Added ability to disable/enable the default capthca system.
