@@ -11,7 +11,7 @@
  * Plugin Name:       ResRes Light
  * Plugin URI:        http://www.deftdev.com
  * Description:       A Light version of the powerful restuarant reservation system, ResRes.
- * Version:           1.0.9.f
+ * Version:           1.0.10.f
  * Author:            Dean Robinson
  * Author URI:        http://www.deftdev.com
  * Text Domain:       resres
