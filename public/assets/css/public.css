@@ -83,7 +83,7 @@
 
 
 .ui-datepicker {
-	z-index: 5 !important;
+	/*z-index: 5 !important;*/
 }
 
 .ui-slider-range {

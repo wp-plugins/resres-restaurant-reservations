@@ -3,8 +3,8 @@ Contributors: deftdev
 Donate link: http://deftdev.com/
 Tags: restaurant, reservation, booking, menu, 
 Requires at least: 3.7.1
-Tested up to: 4.0
-Stable tag: 1.0.9.f
+Tested up to: 4.2
+Stable tag: 1.0.10.f
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,6 +45,7 @@ ResRes is a fully featured restaurant reservation and menu system. Create custom
 * Easily add chili icons to denote spicy heat! 
 * MailChimp integration.
 * A capacity system, allows you to limit the number of bookings per hour.
+
 
 ####Support
 
@@ -108,6 +109,9 @@ It will email you. With the **[PRO](http://deftdev.com/downloads/resres "deftDEV
 3. Opening times and location
 4. One of the settings pages
 == Changelog ==
+
+= 1.0.10.f =
+* FIX: Subject line was only replacing one email tag.
 
 = 1.0.9.f =
 * FIX: Reverted having the datepicker field as readonly.

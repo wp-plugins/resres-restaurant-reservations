@@ -28,7 +28,7 @@ class ResRes {
 	 *
 	 * @var     string
 	 */
-	const VERSION = '1.0.9.f';
+	const VERSION = '1.0.10.f';
 
 	/**
 	 * Database version
@@ -1103,46 +1103,60 @@ public function resres_time_convert($time) {
 		$headers[] = 'From: '. get_option('blogname') . ' <noreply@' . $base_url['host'] . '>';
 		$headers[] = "Cc: " . $email_options['registration_emails_admin_cc'];
 
-if($email_options['resres_disable_html_email'] != 1) {
-	$headers[] = "Content-type: text/html";
-}
+		if($email_options['resres_disable_html_email'] != 1) {
+			$headers[] = "Content-type: text/html";
+		}
 
 		$final_message = $email_options['registration_emails_admin_message'];
-		$final_message = str_replace('{reservation_id}', $form_data['reservation_id'], $final_message);
+		$final_message = $this->resres_tag_replace($final_message, $form_data);
 
-		$final_message = str_replace('{customer_name}', $form_data['resres_name'], $final_message);
-		$final_message = str_replace('{customer_phone}', $form_data['resres_phone'], $final_message);
-		$final_message = str_replace('{customer_email}', $form_data['resres_email'], $final_message);
-		$final_message = str_replace('{reservation_date}', $form_data['resres_date'], $final_message); //removed date fromat here as should be in WP format already
-		$final_message = str_replace('{reservation_time}', $form_data['resres_time'], $final_message); //removed date fromat here as should be in WP format already
-		$final_message = str_replace('{party_size}', $form_data['resres_partysize'], $final_message);
-		$final_message = str_replace('{reservation_notes}', $form_data['resres_notes'], $final_message);
-
-		$final_message = str_replace('{restaurant_name}', $options['address_name'], $final_message);
-		$final_message = str_replace('{restaurant_add}', $options['address_line1'], $final_message);
-		$final_message = str_replace('{restaurant_add2}', $options['address_line2'], $final_message);
-		$final_message = str_replace('{restaurant_city}', $options['address_city'], $final_message);
-		$final_message = str_replace('{restaurant_region}', $options['address_region'], $final_message);
-		$final_message = str_replace('{restaurant_city}', $options['address_country'], $final_message);
-		$final_message = str_replace('{restaurant_postalcode}', $options['address_postalcode'], $final_message);
-		$final_message = str_replace('{restaurant_phone}', $options['address_phone'], $final_message);
-		$final_message = str_replace('{restaurant_fax}', $options['address_fax'], $final_message);
-		$final_message = str_replace('{restaurant_email}', $options['address_email'], $final_message);
-		$final_message = str_replace('{restaurant_facebook}', '<a href="' . $options['address_facebook'] . '">Facebook</a>', $final_message);
-		$final_message = str_replace('{restaurant_twitter}', '<a href="https://twitter.com/' . $options['address_twitter'] . '">@' . $options['address_twitter'] . '</a>', $final_message);
-		$final_message = str_replace('{restaurant_googleplus}', '<a href="https://plus.google.com/u/0/' . $options['address_googleplus'] . '">Google+</a>', $final_message);
 
 		$to 			= $to;
 		$subject 		= $email_options['registration_emails_admin_subject'];
+		$subject 		= $this->resres_tag_replace($subject, $form_data);
 		$message 		= $final_message;
 		$headers 		= $headers;
 		//$attachments	= '';
 
 
 		wp_mail( $to, $subject, $message, $headers, $attachments );
-
-
 	}
+
+
+	public function resres_tag_replace($value, $form_data) {
+
+		$options = get_option( 'resres_options' );
+		$email_options = get_option( 'resres_email_options' );
+
+		$value = str_replace('{reservation_id}', $form_data['reservation_id'], $value);
+
+		$value = str_replace('{customer_name}', $form_data['resres_name'], $value);
+		$value = str_replace('{customer_phone}', $form_data['resres_phone'], $value);
+		$value = str_replace('{customer_email}', $form_data['resres_email'], $value);
+		$value = str_replace('{reservation_date}', $form_data['resres_date'], $value); //removed date fromat here as should be in WP format already
+		$value = str_replace('{reservation_time}', $form_data['resres_time'], $value); //removed date fromat here as should be in WP format already
+		$value = str_replace('{party_size}', $form_data['resres_partysize'], $value);
+		$value = str_replace('{reservation_notes}', $form_data['resres_notes'], $value);
+
+		$value = str_replace('{restaurant_name}', $options['address_name'], $value);
+		$value = str_replace('{restaurant_add}', $options['address_line1'], $value);
+		$value = str_replace('{restaurant_add2}', $options['address_line2'], $value);
+		$value = str_replace('{restaurant_city}', $options['address_city'], $value);
+		$value = str_replace('{restaurant_region}', $options['address_region'], $value);
+		$value = str_replace('{restaurant_city}', $options['address_country'], $value);
+		$value = str_replace('{restaurant_postalcode}', $options['address_postalcode'], $value);
+		$value = str_replace('{restaurant_phone}', $options['address_phone'], $value);
+		$value = str_replace('{restaurant_fax}', $options['address_fax'], $value);
+		$value = str_replace('{restaurant_email}', $options['address_email'], $value);
+		$value = str_replace('{restaurant_facebook}', '<a href="' . $options['address_facebook'] . '">Facebook</a>', $value);
+		$value = str_replace('{restaurant_twitter}', '<a href="https://twitter.com/' . $options['address_twitter'] . '">@' . $options['address_twitter'] . '</a>', $value);
+		$value = str_replace('{restaurant_googleplus}', '<a href="https://plus.google.com/u/0/' . $options['address_googleplus'] . '">Google+</a>', $value);
+
+		$value = str_replace('{restaurant_name}', $options['address_name'], $value);
+
+		return $value;
+	}
+
 
 	// customer email
 	public function resres_send_registration_email($form_data) {
@@ -1163,39 +1177,18 @@ if($email_options['resres_disable_html_email'] != 1) {
 		$headers[] = 'From: '. get_option('blogname') . ' <noreply@' . $base_url['host'] . '>';
 		$headers[] = "Cc: " . $email_options['registration_emails_registrant_cc'];
 
-if($email_options['resres_disable_html_email'] != 1) {
-	$headers[] = "Content-type: text/html";
-}
+		if($email_options['resres_disable_html_email'] != 1) {
+			$headers[] = "Content-type: text/html";
+		}
 
 		$final_message = $email_options['registration_emails_registrant_message'];
 
-		$final_message = str_replace('{reservation_id}', $form_data['reservation_id'], $final_message);
+		$final_message = $this->resres_tag_replace($final_message, $form_data);
 
-		$final_message = str_replace('{customer_name}', $form_data['resres_name'], $final_message);
-		$final_message = str_replace('{customer_phone}', $form_data['resres_phone'], $final_message);
-		$final_message = str_replace('{customer_email}', $form_data['resres_email'], $final_message);
-		$final_message = str_replace('{reservation_date}', $form_data['resres_date'], $final_message); //removed date fromat here as should be in WP format already
-		$final_message = str_replace('{reservation_time}', $form_data['resres_time'], $final_message); //removed date fromat here as should be in WP format already
-		$final_message = str_replace('{party_size}', $form_data['resres_partysize'], $final_message);
-		$final_message = str_replace('{reservation_notes}', $form_data['resres_notes'], $final_message);
-
-		$final_message = str_replace('{restaurant_name}', $options['address_name'], $final_message);
-		$final_message = str_replace('{restaurant_add}', $options['address_line1'], $final_message);
-		$final_message = str_replace('{restaurant_add2}', $options['address_line2'], $final_message);
-		$final_message = str_replace('{restaurant_city}', $options['address_city'], $final_message);
-		$final_message = str_replace('{restaurant_region}', $options['address_region'], $final_message);
-		$final_message = str_replace('{restaurant_city}', $options['address_country'], $final_message);
-		$final_message = str_replace('{restaurant_postalcode}', $options['address_postalcode'], $final_message);
-		$final_message = str_replace('{restaurant_phone}', $options['address_phone'], $final_message);
-		$final_message = str_replace('{restaurant_fax}', $options['address_fax'], $final_message);
-		$final_message = str_replace('{restaurant_email}', $options['address_email'], $final_message);
-		$final_message = str_replace('{restaurant_facebook}', '<a href="' . $options['address_facebook'] . '">Facebook</a>', $final_message);
-		$final_message = str_replace('{restaurant_twitter}', '<a href="https://twitter.com/' . $options['address_twitter'] . '">@' . $options['address_twitter'] . '</a>', $final_message);
-		$final_message = str_replace('{restaurant_googleplus}', '<a href="https://plus.google.com/u/0/' . $options['address_googleplus'] . '">Google+</a>', $final_message);
 
 		$to 			= $form_data['resres_email'];
 		$subject 		= $email_options['registration_emails_registrant_subject'];
-		$subject 		= str_replace('{restaurant_name}', $options['address_name'], $subject);
+		$subject 		= $this->resres_tag_replace($subject, $form_data);
 		$message 		= $final_message;
 		$headers 		= $headers;
 		//$attachments	= '';
@@ -1343,49 +1336,20 @@ if($email_options['resres_disable_html_email'] != 1) {
 		}
 
 		$admin_message = $email_options['registration_emails_cancel_admin_message'];
-
-		$admin_message = str_replace('{reservation_id}', $form_data['reservation_id'], $admin_message);
-
-		$admin_message = str_replace('{restaurant_name}', $options['address_name'], $admin_message);
-		$admin_message = str_replace('{restaurant_add}', $options['address_line1'], $admin_message);
-		$admin_message = str_replace('{restaurant_add2}', $options['address_line2'], $admin_message);
-		$admin_message = str_replace('{restaurant_city}', $options['address_city'], $admin_message);
-		$admin_message = str_replace('{restaurant_region}', $options['address_region'], $admin_message);
-		$admin_message = str_replace('{restaurant_city}', $options['address_country'], $admin_message);
-		$admin_message = str_replace('{restaurant_postalcode}', $options['address_postalcode'], $admin_message);
-		$admin_message = str_replace('{restaurant_phone}', $options['address_phone'], $admin_message);
-		$admin_message = str_replace('{restaurant_fax}', $options['address_fax'], $admin_message);
-		$admin_message = str_replace('{restaurant_email}', $options['address_email'], $admin_message);
-		$admin_message = str_replace('{restaurant_facebook}', '<a href="' . $options['address_facebook'] . '">Facebook</a>', $admin_message);
-		$admin_message = str_replace('{restaurant_twitter}', '<a href="https://twitter.com/' . $options['address_twitter'] . '">@' . $options['address_twitter'] . '</a>', $admin_message);
-		$admin_message = str_replace('{restaurant_googleplus}', '<a href="https://plus.google.com/u/0/' . $options['address_googleplus'] . '">Google+</a>', $admin_message);
-
-
 		$customer_message = $email_options['registration_emails_cancel_registrant_message'];
 
-		$customer_message = str_replace('{reservation_id}', $form_data['reservation_id'], $customer_message);
 
-		$customer_message = str_replace('{restaurant_name}', $options['address_name'], $customer_message);
-		$customer_message = str_replace('{restaurant_add}', $options['address_line1'], $customer_message);
-		$customer_message = str_replace('{restaurant_add2}', $options['address_line2'], $customer_message);
-		$customer_message = str_replace('{restaurant_city}', $options['address_city'], $customer_message);
-		$customer_message = str_replace('{restaurant_region}', $options['address_region'], $customer_message);
-		$customer_message = str_replace('{restaurant_city}', $options['address_country'], $customer_message);
-		$customer_message = str_replace('{restaurant_postalcode}', $options['address_postalcode'], $customer_message);
-		$customer_message = str_replace('{restaurant_phone}', $options['address_phone'], $customer_message);
-		$customer_message = str_replace('{restaurant_fax}', $options['address_fax'], $customer_message);
-		$customer_message = str_replace('{restaurant_email}', $options['address_email'], $customer_message);
-		$customer_message = str_replace('{restaurant_facebook}', '<a href="' . $options['address_facebook'] . '">Facebook</a>', $customer_message);
-		$customer_message = str_replace('{restaurant_twitter}', '<a href="https://twitter.com/' . $options['address_twitter'] . '">@' . $options['address_twitter'] . '</a>', $customer_message);
-		$customer_message = str_replace('{restaurant_googleplus}', '<a href="https://plus.google.com/u/0/' . $options['address_googleplus'] . '">Google+</a>', $customer_message);
+		$admin_message = $this->resres_tag_replace($admin_message, $form_data);
+		$customer_message = $this->resres_tag_replace($customer_message, $form_data);
+
 
 		$admin_to 			= $admin_to;
 		$admin_subject 		= $email_options['registration_emails_cancel_admin_subject'];
-		$admin_subject 		= str_replace('{restaurant_name}', $options['address_name'], $subject);
+		$admin_subject 		= $this->resres_tag_replace($admin_subject, $form_data);
 
 		$customer_to 			= $res_details['email'];
 		$customer_subject 		= $email_options['registration_emails_cancel_registrant_subject'];
-		$customer_subject 		= str_replace('{restaurant_name}', $options['address_name'], $subject);
+		$customer_subject 		= $this->resres_tag_replace($customer_subject, $form_data);
 
 		$headers 		= $headers;
 
